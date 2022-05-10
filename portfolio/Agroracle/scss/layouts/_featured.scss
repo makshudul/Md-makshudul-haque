@@ -1,0 +1,108 @@
+.featured-section{
+    padding: 100px;
+
+    .featured__inner{
+        justify-content: space-between;
+    }
+    .featured__card{
+        max-width: 700px;
+
+        &--left__padding{
+            padding-left: 200px;
+        }
+        &--right__padding{
+            padding-right: 200px;
+        }
+
+        h3{
+            color: #000000;
+            font-size: 36px;
+            font-family: 'gelionmedium';
+        }
+        h4{
+            font-weight: 400;
+            font-size: 20px;
+            font-family: 'gelionmedium';
+        }
+        p{
+            line-height: 24px;
+        }
+    }
+}
+
+@media all and (max-width:991px){
+    .featured-section{
+        padding:50px 15px;
+    
+        .featured__inner{
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
+        img{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        
+        .featured__card{
+            max-width: 700px;
+            margin-bottom: 30px;
+            
+            &--left__padding{
+                padding-left: 0px;
+            }
+            &--right__padding{
+                padding-right: 0px;
+            }
+    
+            h3{
+                color: #000000;
+                font-size: 24px;
+                font-family: 'gelionmedium';
+            }
+            h4{
+                font-weight: 400;
+                font-size: 18px;
+                font-family: 'gelionmedium';
+            }
+            p{
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+@media all and (min-width:992px) and (max-width:1440px){
+    .featured-section{
+        padding: 100px 15px;
+    
+        .featured__inner{
+            justify-content: space-between;
+        }
+        .featured__card{
+            max-width: 700px;
+    
+            &--left__padding{
+                padding-left: 100px;
+                padding-right: 50px;
+            }
+            &--right__padding{
+                padding-right: 100px;
+                padding-left: 50px;
+            }
+    
+            h3{
+                color: #000000;
+                font-size: 36px;
+                font-family: 'gelionmedium';
+            }
+            h4{
+                font-weight: 400;
+                font-size: 20px;
+                font-family: 'gelionmedium';
+            }
+            p{
+                line-height: 24px;
+            }
+        }
+    }
+}

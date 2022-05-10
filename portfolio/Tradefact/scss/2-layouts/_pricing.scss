@@ -1,0 +1,264 @@
+.priceing-head{
+    padding: 60px 0;
+    .priceing-head__info{
+        padding-top: 50px;
+    }
+    .priceing__info--card{
+        padding-right: 50px;
+        h3{
+            font-size: 20px;
+            font-weight: 500;
+            color: $black;
+            margin-bottom: 5px;
+        }
+        p{
+            color: $black;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+// shipmnets-slider
+.shipmnets-slider{
+    margin: 0 0 50px 0;
+    .shipment-slider__inner{
+       
+        border: 1px solid $gray-light;
+        .shipment__inner--head{
+            background-color: $gray-thin;
+            border-bottom: 1px solid  $gray-light;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 15px;
+            h3{
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 500;
+                color: $black;
+                margin-bottom: 0;
+            }
+            h2{
+                font-size: 22px;
+                line-height: 24px;
+                font-weight: 500;
+                color: $black;
+                margin-bottom:15px;
+                margin-top: 30px;
+            }
+            .shipment__head--left{
+                width: 75%;
+                
+            }
+            .shipment__head--right{
+                width: 25%;
+            }
+        }
+        .shipment__inner--package{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 15px;
+            .shipment__pack--card{
+                width: 25%;
+
+                h2{
+                    font-size: 24px;
+                    line-height: 24px;
+                    font-weight: 500;
+                    color: $black;
+                    margin-bottom: 5px;
+                }
+                h3{
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 500;
+                    color: $black;
+                    margin-bottom: 0;
+                }
+                h4{
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 500;
+                    color: $black;
+                    margin-bottom: 10px;
+                    margin-top: 30px;
+                }
+            }
+        }
+        
+        p{
+            font-size: 13px;
+            line-height: 20px;
+        }
+        i{
+            font-size: 12px;
+            color: $gray-light;
+        }
+        small{
+            font-size: 13px;
+            color: $gray;
+        }
+        .lable-blue{
+            width: 200px;
+            border-radius: 25px;
+            text-align: center;
+            font-size: 13px;
+            display: block;
+            height: 30px;
+            color: $white;
+            background-color: $blue;
+            margin-top: -30px;
+        }
+    }
+}
+
+@media all and (max-width:991px){
+    // shipmnets-slider
+.shipmnets-slider{
+    
+    .shipment-slider__inner{
+       
+       
+        .shipment__inner--head{
+           
+            padding: 10px;
+            h3{
+                font-size: 16px;
+                margin-bottom: 0;
+            }
+            h2{
+                font-size: 20px;
+                line-height: 24px;
+                font-weight: 500;
+                color: $black;
+                margin-bottom:15px;
+                margin-top: 30px;
+            }
+            .shipment__head--left{
+                width: 100%;
+                margin-bottom: 40px;
+                
+            }
+            .shipment__head--right{
+                width: 100%;
+            }
+        }
+        .shipment__inner--package{
+            padding: 15px;
+            .shipment__pack--card{
+                width: 100%;
+                margin-bottom: 40px;
+
+                h2{
+                    font-size: 24px;
+                    margin-bottom: 5px;
+                }
+                h3{
+                    font-size: 16px;
+                }
+                h4{
+                    font-size: 16px;
+                    margin-top: 20px;
+                }
+            }
+        }
+        
+        
+        small{
+            font-size: 12px;
+        }
+        .lable-blue{
+            margin-top: 0px;
+        }
+    }
+}
+
+}
+.table-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    span{
+        font-size: 16px;
+        color: $black;
+    }
+    .chat__wrap{
+        span{
+            display: inline-block;
+            padding: 8px 22px;
+            background-color: $gray-thin;
+            border-radius: 25px;
+            font-size: 16px;
+            color: $black;
+            a{
+                color: $black;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+@media all and (max-width:991px){
+    .table-head{
+        .chat__wrap{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
+.table__content{
+    margin-top: 40px;
+    text-align: center;
+    td{
+        font-size: 15px;
+        font-weight: 500;
+        i{
+            color: $black;
+        }
+        
+    }
+    tbody{
+        tr{
+            th{
+                font-size: 15px;
+                font-weight: 500;
+                text-align: left;
+                a i{
+                    color: $gray-light;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    h4{
+        font-size: 18px;
+        font-weight: 500;
+        color: $black;
+        margin: 20px 0;
+    }
+    h3{
+        font-size: 22px;
+        font-weight: 500;
+        color: $black;
+        margin: 20px 0;
+        small{
+            font-size: 15px;
+            color: $gray;
+            span{
+                color: red;
+                margin-left: 10px;
+            }
+        }
+
+    }
+}
+.table-footer{
+    padding: 50px 15px;
+    text-align: center;
+    p{
+        font-size: 12px;
+        color: $black;
+    }
+}

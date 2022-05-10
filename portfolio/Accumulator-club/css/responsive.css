@@ -1,0 +1,155 @@
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+
+
+}
+@media (min-width: 991px) and (max-width: 3000px) {
+    header{
+        display: none;
+    }
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .main-menu{
+        display: none;
+    }
+    .user-login{
+        display: none;
+    }
+    .site-logo img{
+        width: 20%;
+    }
+    .site-logo{
+        text-align: center;
+        width: 100%;
+        position: static;
+        padding: 0;
+    }
+    .hero-area {
+    	padding-bottom: 244px;
+    	height: auto;
+    	padding-top: 100px;
+    }
+    .form-box{
+        margin-top: 30px;
+    }
+    .hero-bottom h1 {
+    	font-size: 26px;
+    }
+    .hero-bottom h3 {
+    	font-size: 20px;
+    }
+    .coundown_res h2 {
+    	font-size: 30px;
+    }
+    .play-btn {
+    	font-size: 17px;
+    	 margin-top:0px;
+    }
+    .big-area-img img{
+        margin-top: 50px;
+    }
+    .single_ser{
+        padding: 0;
+    }
+    .big-lenght-area {
+    	padding: 50px 0;
+    }
+    .big-two {
+    	padding-top: 50px;
+    }
+}
+
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+.main-menu{
+    display: none;
+}
+.user-login{
+    display: none;
+}
+.site-logo{
+    text-align: center;
+    width: 100%;
+    position: static;
+    padding: 0;
+}
+.site-logo img{
+    width: 40%;
+}
+.hero-area {
+	height: auto;
+	padding: 100px 0 500px 0;
+}
+.images-hero img{
+    width: 50%;
+}
+.hero-inner h1 {
+	font-size: 60px;
+	line-height:60px;
+}
+.hero-inner h3 {
+	font-size: 18px;
+}
+.form-box {
+	padding-left: 0px;
+    margin-top: 50px;
+}
+.box_img {
+	position: absolute;
+	bottom: -93px;
+	left: 0;
+	width: 80%;
+}
+.hero-bottom h1 {
+	font-size: 29px;
+}
+.hero-bottom h3 {
+	font-size: 16px;
+}
+.coundown_res{
+    padding: 20px 0;
+}
+.coundown_res h2 {
+	font-size: 30px;
+}
+.big-title h1 {
+	font-size: 40px;
+}
+.big-area-img{
+    margin-top: 30px;
+}
+.pad_100 {
+	padding:40px 0;
+}
+.big-area-text h1 {
+	font-size: 40px;
+}
+.big-area-text h2 {
+	font-size: 24px;
+}
+.big-area-text h2 strong {
+	font-size: 25px;
+}
+.big-area-text h3 {
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 23px;
+	max-width: 100%;
+}
+.big-two {
+	padding-top: 50px;
+}
+.footer_inner {
+	padding: 50px 0;
+	margin-top: -400px;
+}
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+}

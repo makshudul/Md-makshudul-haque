@@ -1,0 +1,112 @@
+.most__popular{
+    padding: 100px 0;
+
+    .most__popular__card{
+        text-align: center;
+
+        h3{
+            font-size: 36px;
+            font-family: 'gelionmedium';
+            color: #000000;
+            margin-bottom: 45px;
+        }
+
+        .most__popular__card_list{
+            box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.06);
+            padding: 40px 30px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            flex-wrap: wrap;
+
+            position: relative;
+            z-index: 9999;
+
+
+            .most__popular__card__item{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 48%;
+                height: 56px;
+                background-color: #F4F8F0;
+                margin-bottom: 10px;
+                color: #505251;
+
+                &:hover{
+                    background-color: #90B75C;
+                    color: #fff;
+                }
+            }
+            &--style-2{
+                border: 2px solid #E3ECD9;
+            }
+        }
+
+        .see__all{
+            text-align: center;
+                a{
+                    display: inline-block;
+                    margin-top: 50px;
+                    width: 240px;
+                    height: 62px;
+                    background-color: #F4F8F0;
+                    margin-bottom: 10px;
+                    color: #505251;
+                    padding-top: 15px;
+                    color: #88AC57;
+                    font-size: 20px;
+                    font-family: 'gelionmedium';
+                }
+        }
+    }
+    .row_r{
+        position: relative;
+    }
+    .shape_tree{
+        position: absolute;
+        left: -80px;
+        bottom: 122px;
+        z-index: 9;
+    }
+}
+
+@media all and (max-width:991px){
+    .most__popular{
+        padding: 50px 0;
+    
+        .most__popular__card{
+    
+            h3{
+                font-size: 24px;
+                margin-bottom: 25px;
+            }
+    
+            .most__popular__card_list{
+               
+    
+    
+                .most__popular__card__item{
+                    width: 100%;
+    
+                    &:hover{
+                        background-color: #90B75C;
+                        color: #fff;
+                    }
+                }
+                &--style-2{
+                    border: 2px solid #E3ECD9;
+                }
+            }
+    
+            .see__all{
+                margin-bottom: 50px;
+                   
+            }
+        }
+        
+        .shape_tree{
+            display: none;
+        }
+    }
+}

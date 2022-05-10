@@ -1,0 +1,22 @@
+// Common sections
+@import 'header';
+@import 'footer';
+@import "user_info_wrap";
+@import "form__elements";
+@import "page_head";
+@import "side_bar";
+@import "pagination";
+
+// Landing Page
+@import 'hero';
+@import 'update-process';
+@import 'three-step';
+@import 'sign_up';
+
+
+// Home Page
+@import "user_info_data_box";
+
+// Change Address
+@import "change_address";
+@import "address__cards";

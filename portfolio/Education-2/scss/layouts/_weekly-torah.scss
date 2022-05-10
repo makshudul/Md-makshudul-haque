@@ -1,0 +1,15 @@
+.weekly-torah {
+    &.padding__extra_b {
+        padding-bottom: 120px !important;
+    }
+
+    position: relative;
+}
+@media all and (max-width:991px){
+    .weekly-torah {
+        &.padding__extra_b {
+            padding-bottom: 50px !important;
+        }
+    
+    }
+}

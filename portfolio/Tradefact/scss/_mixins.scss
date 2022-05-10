@@ -1,0 +1,77 @@
+// background
+
+@mixin brb {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: $gray-light;
+}
+@mixin btn {
+    width: 180px;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 8px;
+    border-radius: 0;
+}
+@mixin  btn-large {
+    width: 220px;
+}
+@mixin btn-medium {
+    width: 160px;
+    font-size: 13px;
+    height: 40px;
+}
+@mixin  btn-small {
+    width: 140px;
+    font-size: 14px;
+    height: 40px;
+
+}
+@mixin btn-blue-outline {
+    border-width: 2px;
+    border-style: solid;
+    border-color: $blue;
+    background-color: transparent;
+    color: $blue;
+    &:hover{
+        background-color: $blue;
+        color: $white;
+    }
+}
+@mixin  btn-white-outline {
+    border-width: 2px;
+    border-style: solid;
+    border-color: $white;
+    background-color: transparent;
+    color: $white;
+    &:hover{
+        background-color: $white;
+        color: $blue;
+    }
+}
+@mixin btn-fill {
+    border-width: 2px;
+    border-style: solid;
+    border-color: $blue;
+    background-color: $blue;
+    color: $white;
+    &:hover{
+        background-color: transparent;
+        color: $blue;
+        border-color:$blue ;
+    }
+}
+@mixin shadow-b {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+@mixin btn-mobile {
+    width: 140px;
+    height: 40px;
+    font-size: 15px;
+    padding-top: 7px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 0;
+
+}

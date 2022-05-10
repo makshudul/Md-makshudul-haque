@@ -1,0 +1,65 @@
+.expertise-section{
+    text-align: right;
+    padding: 100px 0;
+    background-image: url("../images/woman.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    .expertise__inner{
+        h3{
+            font-size: 70px;
+            max-width: 300px;
+            color: $black;
+            border-right: 10px solid $yellow;
+            padding-right: 15px;
+            margin: 0;
+        }
+    }
+}
+
+.expertise-cards{
+    .expertise__card{
+        margin-bottom: 50px;
+        text-align: right;
+        padding: 20px;
+        &:hover{
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .expertise__card__icon{
+            height: 100px;
+        }
+        .expertise__card__title{
+            h3{
+                font-size: 20px;
+            }
+            margin-bottom: 15px;
+        }
+        .expertise__card__desc{
+            margin-bottom: 20px;
+        }
+        .expertise__card__btn{
+            .btn-outline-primary{
+                width: 150px;
+                &:hover{
+                    color: #fff;
+                }
+            }
+        }
+       
+    }
+}
+
+@media all and (max-width:991px){
+    .expertise-section{
+        padding: 50px 0;
+        .expertise__inner{
+            h3{
+                font-size: 32px;
+                color: $white;
+            }
+        }
+    }
+    
+ 
+}

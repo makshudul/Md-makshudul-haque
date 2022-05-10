@@ -1,0 +1,135 @@
+.footer-section {
+
+    // big__footer
+    .big__footer {
+        background-color: $bandicoot;
+        padding: 60px 0;
+
+        .footer__card {
+            h3 {
+                font-size: 17px;
+                font-weight: $font-300;
+                color: $white;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+
+            ul {
+                li {
+                    display: block;
+
+                    a {
+                        display: block;
+                        color: $white;
+                        font-size: 15px;
+                        text-transform: uppercase;
+                        line-height: 28px;
+                    }
+                }
+
+                &.contact_ul {
+                    li {
+                        a {
+                            font-size: 13px;
+                            text-transform: lowercase;
+
+                            span {
+                                display: inline-block;
+                                margin-right: 5px;
+
+                            }
+                        }
+                    }
+                }
+
+                &.social_ul {
+                    margin-top: 30px;
+
+                    li {
+                        display: inline-block;
+
+                        a {
+                            font-size: 18px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // small__footer
+    .small__footer {
+        background-color: $gray-600;
+        padding: 15px 0;
+
+        .small__footer__card {
+            p {
+                color: $white;
+                font-size: 14px;
+                margin-bottom: 0;
+            }
+
+            ul {
+
+                li {
+                    display: inline-block;
+
+                    a {
+                        display: block;
+                        color: $white;
+                        font-size: 14px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width:991px){
+    .footer-section {
+        // big__footer
+        .big__footer {
+            padding: 60px 0;
+    
+            .footer__card {
+                margin-bottom: 40px;
+                h3 {
+                    font-size: 15px;
+                }
+    
+                ul {
+                    li {
+                        a {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    
+        // small__footer
+        .small__footer {
+    
+            .small__footer__card {
+                p {
+                    font-size: 12px;
+                    text-align: center;
+                }
+    
+                ul {
+                    text-align: center;
+                    li {
+    
+                        a {
+                            font-size: 12px;
+                            padding: 0 5px;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

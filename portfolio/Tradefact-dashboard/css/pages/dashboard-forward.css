@@ -1,0 +1,48 @@
+
+.dashboard__head h3{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #12263F;
+}
+.dashboard__head{
+    margin-bottom: 20px;
+}
+.dashboard__card{
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #EDF2F9;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+.dashboard__card--head{
+    border-bottom: 1px solid #EDF2F9;
+    padding: 25px 0;
+}
+.dashboard__card--head h3{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #12263F;
+    margin: 0;
+}
+.dashboard__card--content{
+    padding: 30px 0;
+}
+.dashboard__card--content h3{
+    font-weight: 600;
+    font-size: 36px;
+}
+.color-red{
+    color: #E66054;
+}
+.color-blue{
+    color: #2C7BE5;
+}
+.dashboard__card--content span{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #12263F;
+}
+

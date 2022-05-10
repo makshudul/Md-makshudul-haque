@@ -1,0 +1,29 @@
+.btn{
+    @include btn;
+}
+.btn.btn-large{
+    @include btn-large;
+}
+.btn.btn-small{
+    @include btn-small;
+}
+.btn.btn-medium{
+    @include btn-medium;
+}
+.btn-blue-outline{
+    @include btn-blue-outline;
+}
+.btn-white-outline{
+    @include btn-white-outline;
+}
+.btn-blue-fill{
+    @include btn-fill;
+}
+
+
+@media all and (max-width:991px){
+    .btn{
+        @include btn-mobile;
+    }
+    
+}

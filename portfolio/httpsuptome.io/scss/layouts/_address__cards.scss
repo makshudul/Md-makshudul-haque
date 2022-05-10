@@ -1,0 +1,97 @@
+.address__cards{
+    .address__card{
+        border: 1px solid $light-gray;
+        @include box-shadow(0,4px,10px, rgba(0,0,0,0.05));
+        border-radius: 6px;
+        padding: 20px;
+        position: relative;
+        height: 180px;
+        cursor: pointer;
+        margin-bottom: 30px;
+        &:hover{
+            .address__card__info{
+                .btn{
+                    img{
+                        opacity: 1;
+                    }
+
+                    &.btn-check{
+                        opacity: 1;
+                    }
+                    &.btn-check{
+                        img{
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .address__card__info{
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            .btn{
+                width: auto;
+                padding: 0;
+                margin-left: 5px;
+                img{
+                    opacity: 0;
+                    transition: opacity 300ms ease-in-out;
+                }
+
+                &.btn-check{
+                    img{
+                        width: 20px;
+                    }
+                    width: 20px;
+                    height: 20px;
+                    line-height: 0;
+                    border: 1px solid $light-gray;
+                    border-radius: 20px;
+                    opacity: 0;
+                    transition: opacity 300ms ease-in-out;
+                }
+            }
+        }
+        &--selected{
+            .address__card__info{
+                .btn{
+                    &.btn-check{
+                        opacity: 1;
+                        border: none;
+                        img{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            &:hover{
+               .address__card__info{
+                   .btn{
+                       &.btn-check{
+                           opacity: 1;
+                           img{
+                               opacity: 1;
+                           }
+                       }
+                   }
+               } 
+            }
+        }
+        .address__card__img{
+            img{
+                width: 75px;
+            }
+        }
+        .address__card__title{
+            margin-top: 20px;
+            h3{
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: 400;
+                color: $dark;
+            }
+        }
+    }
+}

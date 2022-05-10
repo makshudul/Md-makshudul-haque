@@ -1,0 +1,243 @@
+.table_td_head span{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17px;
+    color: #12263F;
+}
+.table_td_head span a{
+    text-decoration: underline;
+    margin-right: 10px;
+    color: #12263F;
+}
+.shipment_nav{
+    padding: 10px 0;
+}
+.shipment_nav ul li{
+    display: inline-block;
+}
+.shipment_nav ul li a{
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #12263F;
+}
+.shipment_nav ul li a i{
+    color: #2C7BE5;
+    font-size: 10px;
+    padding: 0 3px;
+}
+.shipment_tag_list ul li{
+    display: inline-block;
+}
+.shipment_tag_list ul li a{
+    display: block;
+    background: #F9FBFD;
+    border: 1px solid #EDF2F9;
+    border-radius: 44px;
+    font-weight: 500;
+    font-size: 10px;
+    color: #12263F;
+    height: 26px;
+    padding:4px 10px;
+    margin-right: 5px;
+}
+.shipment_progress_status{
+    display: flex;
+    align-items: center;
+}
+.shipment_progress_status span{
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 17px;
+    color: #12263F;
+    display: inline-block;
+}
+.shipment_progress_status span span{
+    font-weight: 400;
+}
+.status_col{
+    margin: 0 10px 0 0;
+}
+
+.delay_status span{
+    font-weight: 700;
+    border: 1px solid #E66054;
+    font-size: 10px;
+    color: #E66054;
+    border-radius: 25px;
+    padding: 5px 20px;
+}
+.full_width .good_ready{
+    margin: 0 15px;
+}
+.full_width .shipment_progress_status span {
+    font-size: 12px;
+}
+.table_mobile_funnel {
+    display: none;
+}
+.shipment_tag_list ul li:last-child {
+    display: none;
+}
+@media all and (max-width:991px){
+    .table_mobile_funnel {
+        display: block;
+    }
+    .toggle_label{
+        display: none;
+    }
+    .table_toggle .btn {
+        width: auto;
+    }
+    .table_toggle .btn-outline-primary:not(:disabled):not(.disabled).active, 
+    .table_toggle .btn-outline-primary:not(:disabled):not(.disabled):active, 
+    .table_toggle .show>.btn-outline-primary.dropdown-toggle {
+        color: #95AAC9;
+        background-color: transparent;
+        border-color: transparent;
+    }
+    .table_toggle .btn-outline-primary {
+        border: 1px solid transparent;
+        padding: 0 5px;
+    }
+    .table_status{
+        display: none;
+    }
+    .table_mobile_funnel .table_status{
+        display: block;
+    }
+    .shipment_table .add_item{
+        display: none;
+    }
+    .shipment_table .table_mobile_funnel .add_item{
+        display: block;
+        width: 100%;
+        margin: 15px 0 0 0;
+    }
+    .shipment_table .table_mobile_funnel .add_item .btn{
+        width: 100%;
+    }
+    .table_mobile_funnel .add_item .btn-label{
+        display: block;
+    }
+    .table_mobile_funnel .dropdown-menu{
+        padding: 10px;
+        width: 200px;
+        background: #FFFFFF;
+        border: 1px solid #EDF2F9;
+        box-shadow: 0px 2px 5px rgba(18, 38, 63, 0.05);
+        border-radius: 3px;
+    }
+    .table_status {
+        margin-right: 0;
+    }
+    .table_status .custom-select {
+        width: 100%;
+    }
+    .dropdown-toggle{
+        color: #95AAC9;
+    }
+    .dropdown-toggle::after{
+        display: none;
+    }
+    .shipment_table table {
+        border-collapse: collapse;
+        table-layout: auto;
+        width: 100%;
+    }
+    .shipment_table table tr{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .shipment_nav{
+        display: none;
+    }
+    .table tr td {
+        border-top: 1px solid transparent;
+        position: relative;
+        overflow: visible;
+        width: 100%;
+    }
+    .table tr td:last-child {
+        border-bottom: 1px solid #EDF2F9;
+    }
+    .table_td_head span {
+        display: block;
+        margin-bottom: 15px;
+    }
+    .shipment_progress{
+        display: flex;
+        align-items: center;
+    }
+    .slider-container {
+      display: none !important;
+    }
+    .pie-wrapper{
+        width: 20% !important;
+            margin: 15px 0;
+    }
+    .shipment_progress_status {
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    .status_col {
+        margin: 0 10px 0 0;
+        display: block;
+        width: 100%;
+    }
+
+
+    .shipment_tags{
+        position: absolute;
+        right: 0;
+        top: 12px;
+    }
+
+
+    /* shipment_tag_list */
+    .shipment_tag_list ul li{
+        display: none;
+    }
+    .shipment_tag_list li:first-child,
+    .shipment_tag_list li:last-child{
+        display: inline-block;
+    }
+    .shipment_tag_list ul li:last-child {
+        display: inline-block;
+    }
+    .shipment_tag_list ul li  a{
+        display: block;
+        margin: 10px 0;
+    }
+   
+    .shipment_tag_list .dropdown-menu{
+        z-index: 9999;
+        padding: 10px;
+        background: #FFFFFF;
+        border: 1px solid #EDF2F9;
+        box-shadow: 0px 2px 5px rgba(18, 38, 63, 0.05);
+        border-radius: 3px;
+    }
+
+    .table_td_head{
+        margin-bottom: -30px;
+    }
+
+
+    .delay_status span {
+        border: none;
+        border-radius: 0;
+        padding: 0;
+    }
+    .complete_status span {
+       color: #2BC585;
+    }
+
+}
+
+@media all and (min-width:1440px){
+    .shipment_progress_status span {
+        font-size: 12px;
+    }
+}

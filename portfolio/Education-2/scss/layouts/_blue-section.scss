@@ -1,0 +1,41 @@
+.blue-section{
+    padding: 100px 0;
+    position: relative;
+
+    .custom__card{
+        .custom__card__desc{
+            h3{
+                color: $white;
+            }
+            p{
+                color: $white;
+            }
+        }
+    }
+
+    .white__arrow_top{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .white__arrow__left{
+            width: 50%;
+            height: 100%;
+            display: block;
+            background-color: $white;
+            border-radius: 0 0 250px 0;
+        }
+        .white__arrow__right{
+            width: 50%;
+            height: 100%;
+            display: block;
+            background-color: $white;
+            border-radius: 0 0 0 250px;
+        }
+    }
+
+}

@@ -1,0 +1,55 @@
+.faq-inner{
+    .accordion > .card > .card-header {
+        border-radius: 0;
+    }
+    .card-header {
+        padding: 0;
+        margin-bottom: 0;
+        background-color: transparent;
+        border-bottom: 1px solid $gray-light;
+    }
+    .btn{
+        width: 100%;
+        display: block;
+        padding: 12px 10px 12px 0;
+        text-align: left;
+        font-size: 14px;
+        color: $black;
+        font-weight: 500;
+        &:hover{
+            text-decoration: none;
+        }
+        &:focus{
+            text-decoration: none;
+        }
+    }
+    .card {
+        border-width: 1px 0 1px 0;
+        border-style: solid;
+        border-color: $gray-light;
+        border-radius: 0;
+    }
+    .card-body{
+        padding: 15px 0;
+    }
+    .card-body p{
+        color: $black;
+        font-size: 15px;
+    }
+    .accordion .card-header button::after {
+        font-family: 'FontAwesome';
+        content: "\f107";
+        position: absolute;
+        right: 10px;
+        top: 5px;
+    }
+    .accordion .card-header button[aria-expanded='true']::after {
+        content: "\f106"; 
+    }
+}
+
+@media all and (max-width:991px){
+    .faq-inner{
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <!-- CSS FIELS -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="app.css">
+   
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    
+    <div class="main-wrap">
+      <div class="row no-gutters">
+        <div class="col-1 sidebar-wrap">
+          <div class="sidebar-inner">
+            <a href="#" class="expand-navbar"> <i class="fal fa-angle-left"></i> </a>
+            <!-- site Logo -->
+            <div class="sidebar__logo">
+              <a href="index.html"> <img src="images/iperal-logo.png" alt=""> </a>
+            </div>
+            <!-- Navigation -->
+            <div class="sidebar__navigation">
+              <ul>
+                <li class="active">
+                  <a href="index.html">
+                    <span class="nav-icon"> <i class="fal fa-tachometer-slowest"></i> </span>
+                    <span class="nav-label">Dashboard</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="importa.html">
+                    <span class="nav-icon"> <i class="fal fa-file-import"></i> </span>
+                    <span class="nav-label">Importa</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="mbo.html">
+                    <span class="nav-icon"> <i class="fal fa-futbol"></i> </span>
+                    <span class="nav-label">MBO</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="template.html">
+                    <span class="nav-icon"> <i class="fal fa-scroll-old"></i> </span>
+                    <span class="nav-label">Template</span>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+
+            <!-- Dashboard Switcher -->
+            <div class="log-off">
+              <a href="#"><i class="fal fa-power-off"></i> </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-11 main-content">
+          <div class="page-inner">
+            <!-- Page title -->
+            <div class="page__title">
+              <h3>Dashboard</h3>
+            </div>
+            <!-- Section Head -->
+            <div class="section-head">
+              <div class="section-head__left">
+                <div class="search-box">
+                  <form class="form-inline">
+                    <button class="btn search-btn" type="submit"><i class="fal fa-search"> </i></button>
+                    <input class="form-control search-form" type="search" placeholder="Search Here...">
+                    
+                  </form>
+                </div>
+              </div>
+              <div class="section-head__right">
+                <!-- Dropdown -->
+                <div class="dropdown-box">
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle dropdown-btn btn-small" type="button" data-toggle="dropdown">
+                      Ruolo
+                    </button>
+                    <div class="dropdown-menu dropdown-small slideIn animate">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Action</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Dropdown -->
+                <div class="dropdown-box ml-3">
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle dropdown-btn btn-small" type="button" data-toggle="dropdown">
+                      Iper/Super
+                    </button>
+                    <div class="dropdown-menu dropdown-small slideIn animate">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Action</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Dropdown -->
+                <div class="dropdown-box ml-3">
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle dropdown-btn btn-small" type="button" data-toggle="dropdown">
+                      Reparto
+                    </button>
+                    <div class="dropdown-menu dropdown-small slideIn animate">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Action</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Dropdown -->
+                <div class="dropdown-box ml-3">
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle dropdown-btn btn-small" type="button" data-toggle="dropdown">
+                      Filter
+                    </button>
+                    <div class="dropdown-menu dropdown-small slideIn animate">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Action</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Dropdown -->
+                <div class="btn-box ml-3">
+                  <button type="button" class="btn btn-yellow btn-small">Reseat</button>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="table-wrap table-responsive table-borderless has-border-left">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"> &nbsp; </th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Ruolo</th>
+                    <th scope="col">Sede</th>
+                    <th scope="col">Premio teorico</th>
+                    <th scope="col">Reparto</th>
+                    <th scope="col">Premio Raggiunto</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Action <span class="ml-5 expand_all" >Expand All</span> </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="align-middle"> <img src="images/avater-sm.png" alt=""> </td>
+                    <td class="align-middle">Pilio Bado</td>
+                    <td class="align-middle">Task Manager</td>
+                    <td class="align-middle">Civate</td>
+                    <td class="align-middle"> <i class="fal fa-euro-sign"></i> 10,000</td>
+                    <td class="align-middle">Reparti Macelleria Polleria</td>
+                    <td class="align-middle"><i class="fal fa-euro-sign"></i> 10,000</td>
+                    <td class="align-middle">
+                      <div class="status-wrap status-pending">
+                        <span class="status-dot"></span>
+                        Pending
+                      </div>
+                    </td>
+                    <td class="align-middle">
+                      <div class="table-btns">
+                        <button class="btn btn-edit"><i class="fal fa-pencil"></i></button>
+                        <button class="btn btn-close"><i class="fal fa-times"></i></button>
+                        <button class="btn btn-select"><i class="fal fa-check"></i></button>
+                        <button class="btn row-expand"><i class="fas fa-caret-down"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle"> <img src="images/avater-sm.png" alt=""> </td>
+                    <td class="align-middle">Pilio Bado</td>
+                    <td class="align-middle">Task Manager</td>
+                    <td class="align-middle">Civate</td>
+                    <td class="align-middle"> <i class="fal fa-euro-sign"></i> 10,000</td>
+                    <td class="align-middle">Reparti Macelleria Polleria</td>
+                    <td class="align-middle"><i class="fal fa-euro-sign"></i> 10,000</td>
+                    <td class="align-middle">
+                      <div class="status-wrap status-approved">
+                        <span class="status-dot"></span>
+                        Approved
+                      </div>
+                    </td>
+                    <td class="align-middle">
+                      <div class="table-btns">
+                        <button class="btn btn-edit"><i class="fal fa-pencil"></i></button>
+                        <button class="btn btn-close"><i class="fal fa-times"></i></button>
+                        <button class="btn btn-select"><i class="fal fa-check"></i></button>
+                        <button class="btn row-expand"><i class="fas fa-caret-down"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="full-row">
+                    <td colspan="9">
+                      <div class="table__inner">
+                        <!-- Table Left Card -->
+                        <div class="table__inner--left">
+                          <div class="left__card">
+                            <p>Obiettivo</p>
+                          </div>
+                          <div class="left__card">
+                            <p>Obbiettivo/ Consuntivo</p>
+                          </div>
+                          <div class="left__card">
+                            <p>Valore % obbiettivo</p>
+                          </div>
+                          <div class="left__card">
+                            <p>Premio Realizzato</p>
+                          </div>
+                        </div>
+                        <!-- Table RIGHT Card -->
+                        <div class="table__inner--right">
+                          <div class="row no-gutters">
+                            <!-- Single Col -->
+                            <div class="col-3">
+                                <div class="right__card">
+                                  <!-- Single Box -->
+                                  <div class="right__card--box border-b-r">
+                                    <div class="bg-yellow">
+                                      <span class="bg-circle"><i class="fal fa-gem"></i></span>
+                                      <span class="white-text">Incidenza Costo Personale Diretto + Indiretto</span>
+                                    </span>
+                                  </div>
+                                </div>
+                                <!-- Single Box -->
+                                <div class="right__card--box border-r">
+                                  <div class="row no-gutters">
+                                    <div class="col-6">
+                                      <span>
+                                        Obbiettivo
+                                        <strong>11.73</strong>
+                                      </span>
+                                    </div>
+                                    <div class="col-6">
+                                      <span>
+                                        Consuntivo
+                                        <strong>12.55</strong>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- Single Box -->
+                                <div class="right__card--box border-b-r">
+                                  <div class="percentage-box">
+                                    <span class="percentage__ver">
+                                      20%
+                                    </span>
+                                    <span class="percentage__const">
+                                      /20%
+                                    </span>
+                                  </div>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            <!-- Single Col -->
+                            <div class="col-3">
+                              <div class="right__card">
+                                <!-- Single Box -->
+                                <div class="right__card--box border-b-r">
+                                  <span>Incidenza Costo Personale <br> Diretto + Indiretto</span>
+                              </div>
+                              <!-- Single Box -->
+                              <div class="right__card--box border-r">
+                                <div class="row no-gutters">
+                                  <div class="col-6">
+                                    <span>
+                                      Obbiettivo
+                                      <strong>11.73</strong>
+                                    </span>
+                                  </div>
+                                  <div class="col-6">
+                                    <span>
+                                      Consuntivo
+                                      <strong>12.55</strong>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Single Box -->
+                              <div class="right__card--box border-b-r">
+                                <div class="percentage-box">
+                                  <span class="percentage__ver">
+                                    20%
+                                  </span>
+                                  <span class="percentage__const">
+                                    /20%
+                                  </span>
+                                </div>
+                              </div>
+                              
+                              </div>
+                            </div>
+                            <!-- Single Col -->
+                            <div class="col-3">
+                              <div class="right__card">
+                                <!-- Single Box -->
+                                <div class="right__card--box border-b-r">
+                                  <span>Copertura ruolo</span>
+                              </div>
+                              <!-- Single Box -->
+                              <div class="right__card--box border-r">
+                                <div class="row no-gutters">
+                                  <div class="col-6">
+                                    <span>
+                                      Obbiettivo
+                                      <strong>11.73</strong>
+                                    </span>
+                                  </div>
+                                  <div class="col-6">
+                                    <span>
+                                      Consuntivo
+                                      <strong>12.55</strong>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Single Box -->
+                              <div class="right__card--box border-b-r">
+                                <div class="percentage-box">
+                                  <span class="percentage__ver">
+                                    20%
+                                  </span>
+                                  <span class="percentage__const">
+                                    /20%
+                                  </span>
+                                </div>
+                              </div>
+                             
+                              </div>
+                            </div>
+                            <!-- Single Col -->
+                            <div class="col-3">
+                                <div class="right__card">
+                                  <!-- Single Box -->
+                                  <div class="right__card--box border-b-r">
+                                      <span>Vendite Lorde</span>
+                                  </div>
+                                <!-- Single Box -->
+                                <div class="right__card--box border-r">
+                                  <div class="row no-gutters">
+                                    <div class="col-6">
+                                      <span>
+                                        Obbiettivo
+                                        <strong>11.73</strong>
+                                      </span>
+                                    </div>
+                                    <div class="col-6">
+                                      <span>
+                                        Consuntivo
+                                        <strong>12.55</strong>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- Single Box -->
+                                <div class="right__card--box border-b-r">
+                                  <div class="percentage-box">
+                                    <span class="percentage__ver">
+                                      20%
+                                    </span>
+                                    <span class="percentage__const">
+                                      /20%
+                                    </span>
+                                  </div>
+                                </div>
+                                
+                                </div>
+                            </div>
+                          </div>
+                          <div class="sldier-box">
+                            <div class="range">
+                              <input type="range" min="1" max="5" steps="1" value="1">
+                            </div>
+                              <ul class="range-labels">
+                                <li class="active selected">
+                                  <span> <i class="fal fa-euro-sign"></i> 3,000</span>
+                                </li>
+                                <li>
+                                  <span> <i class="fal fa-euro-sign"></i> 3,000</span>
+                                </li>
+                                <li>
+                                  <span> <i class="fal fa-euro-sign"></i> 3,000</span>
+                                </li>
+                                <li>
+                                  <span> <i class="fal fa-euro-sign"></i> 3,000</span>
+                                </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle"> <img src="images/avater-sm.png" alt=""> </td>
+                    <td class="align-middle">Pilio Bado</td>
+                    <td class="align-middle">Task Manager</td>
+                    <td class="align-middle">Civate</td>
+                    <td class="align-middle"> <i class="fal fa-euro-sign"></i> 10,000</td>
+                    <td class="align-middle">Reparti Macelleria Polleria</td>
+                    <td class="align-middle"><i class="fal fa-euro-sign"></i> 10,000</td>
+                    <td class="align-middle">
+                      <div class="status-wrap status-pending">
+                        <span class="status-dot"></span>
+                        Pending
+                      </div>
+                    </td>
+                    <td class="align-middle">
+                      <div class="table-btns">
+                        <button class="btn btn-edit"><i class="fal fa-pencil"></i></button>
+                        <button class="btn btn-close"><i class="fal fa-times"></i></button>
+                        <button class="btn btn-select"><i class="fal fa-check"></i></button>
+                        <button class="btn row-expand"><i class="fas fa-caret-down"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="align-middle"> <img src="images/avater-sm.png" alt=""> </td>
+                    <td class="align-middle">Pilio Bado</td>
+                    <td class="align-middle">Task Manager</td>
+                    <td class="align-middle">Civate</td>
+                    <td class="align-middle"> <i class="fal fa-euro-sign"></i> 10,000</td>
+                    <td class="align-middle">Reparti Macelleria Polleria</td>
+                    <td class="align-middle"><i class="fal fa-euro-sign"></i> 10,000</td>
+                    <td class="align-middle">
+                      <div class="status-wrap status-pending">
+                        <span class="status-dot"></span>
+                        Pending
+                      </div>
+                    </td>
+                    <td class="align-middle">
+                      <div class="table-btns">
+                        <button class="btn btn-edit"><i class="fal fa-pencil"></i></button>
+                        <button class="btn btn-close"><i class="fal fa-times"></i></button>
+                        <button class="btn btn-select"><i class="fal fa-check"></i></button>
+                        <button class="btn row-expand"><i class="fas fa-caret-down"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="full-row">
+                    <td colspan="9">
+                      <div class="table__inner">
+                        <!-- Table Left Card -->
+                        <div class="table__inner--left">
+                          <div class="left__card">
+                            <p>Obiettivo</p>
+                          </div>
+                          <div class="left__card">
+                            <p>Obbiettivo/ Consuntivo</p>
+                          </div>
+                          <div class="left__card">
+                            <p>Valore % obbiettivo</p>
+                          </div>
+                          <div class="left__card">
+                            <p>Premio Realizzato</p>
+                          </div>
+                        </div>
+                        <!-- Table RIGHT Card -->
+                        <div class="table__inner--right">
+                          <div class="row no-gutters">
+                            <!-- Single Col -->
+                            <div class="col-2">
+                                <div class="right__card">
+                                  <!-- Single Box -->
+                                  <div class="right__card--box border-b-r">
+                                    <div class="bg-yellow">
+                                      <span class="bg-circle"><i class="fal fa-gem"></i></span>
+                                      <span class="white-text">Incidenza Costo Personale Diretto + Indiretto</span>
+                                    </span>
+                                  </div>
+                                </div>
+                                <!-- Single Box -->
+                                <div class="right__card--box border-r">
+                                  <div class="row no-gutters">
+                                    <div class="col-6">
+                                      <span>
+                                        Obbiettivo
+                                        <strong>11.73</strong>
+                                      </span>
+                                    </div>
+                                    <div class="col-6">
+                                      <span>
+                                        Consuntivo
+                                        <strong>12.55</strong>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- Single Box -->
+                                <div class="right__card--box border-b-r">
+                                  <div class="percentage-box">
+                                    <span class="percentage__ver">
+                                      20%
+                                    </span>
+                                    <span class="percentage__const">
+                                      /20%
+                                    </span>
+                                  </div>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            <!-- Single Col -->
+                            <div class="col-2">
+                              <div class="right__card">
+                                <!-- Single Box -->
+                                <div class="right__card--box border-b-r">
+                                  <span>Incidenza Costo Personale <br> Diretto + Indiretto</span>
+                              </div>
+                              <!-- Single Box -->
+                              <div class="right__card--box border-r">
+                                <div class="row no-gutters">
+                                  <div class="col-6">
+                                    <span>
+                                      Obbiettivo
+                                      <strong>11.73</strong>
+                                    </span>
+                                  </div>
+                                  <div class="col-6">
+                                    <span>
+                                      Consuntivo
+                                      <strong>12.55</strong>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Single Box -->
+                              <div class="right__card--box border-b-r">
+                                <div class="percentage-box">
+                                  <span class="percentage__ver">
+                                    20%
+                                  </span>
+                                  <span class="percentage__const">
+                                    /20%
+                                  </span>
+                                </div>
+                              </div>
+                              
+                              </div>
+                            </div>
+                            <!-- Single Col -->
+                            <div class="col-2">
+                              <div class="right__card">
+                                <!-- Single Box -->
+                                <div class="right__card--box border-b-r">
+                                  <span>Copertura ruolo</span>
+                              </div>
+                              <!-- Single Box -->
+                              <div class="right__card--box border-r">
+                                <div class="row no-gutters">
+                                  <div class="col-6">
+                                    <span>
+                                      Obbiettivo
+                                      <strong>11.73</strong>
+                                    </span>
+                                  </div>
+                                  <div class="col-6">
+                                    <span>
+                                      Consuntivo
+                                      <strong>12.55</strong>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Single Box -->
+                              <div class="right__card--box border-b-r">
+                                <div class="percentage-box">
+                                  <span class="percentage__ver">
+                                    20%
+                                  </span>
+                                  <span class="percentage__const">
+                                    /20%
+                                  </span>
+                                </div>
+                              </div>
+                              
+                              </div>
+                            </div>
+                          <!-- Single Col -->
+                            <div class="col-2">
+                                <div class="right__card">
+                                  <!-- Single Box -->
+                                  <div class="right__card--box border-b-r">
+                                      <span>Vendite Lorde</span>
+                                  </div>
+                                <!-- Single Box -->
+                                <div class="right__card--box border-r">
+                                  <div class="row no-gutters">
+                                    <div class="col-6">
+                                      <span>
+                                        Obbiettivo
+                                        <strong>11.73</strong>
+                                      </span>
+                                    </div>
+                                    <div class="col-6">
+                                      <span>
+                                        Consuntivo
+                                        <strong>12.55</strong>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- Single Box -->
+                                <div class="right__card--box border-b-r">
+                                  <div class="percentage-box">
+                                    <span class="percentage__ver">
+                                      20%
+                                    </span>
+                                    <span class="percentage__const">
+                                      /20%
+                                    </span>
+                                  </div>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            <!-- Single Col -->
+                            <div class="col-2">
+                              <div class="right__card">
+                                <!-- Single Box -->
+                                <div class="right__card--box border-b-r">
+                                  <span>Copertura ruolo</span>
+                              </div>
+                              <!-- Single Box -->
+                              <div class="right__card--box border-r">
+                                <div class="row no-gutters">
+                                  <div class="col-6">
+                                    <span>
+                                      Obbiettivo
+                                      <strong>11.73</strong>
+                                    </span>
+                                  </div>
+                                  <div class="col-6">
+                                    <span>
+                                      Consuntivo
+                                      <strong>12.55</strong>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Single Box -->
+                              <div class="right__card--box border-b-r">
+                                <div class="percentage-box">
+                                  <span class="percentage__ver">
+                                    20%
+                                  </span>
+                                  <span class="percentage__const">
+                                    /20%
+                                  </span>
+                                </div>
+                              </div>
+                              
+                              </div>
+                            </div>
+                          <!-- Single Col -->
+                            <div class="col-2">
+                                <div class="right__card">
+                                  <!-- Single Box -->
+                                  <div class="right__card--box border-b-r">
+                                      <span>Vendite Lorde</span>
+                                  </div>
+                                <!-- Single Box -->
+                                <div class="right__card--box border-r">
+                                  <div class="row no-gutters">
+                                    <div class="col-6">
+                                      <span>
+                                        Obbiettivo
+                                        <strong>11.73</strong>
+                                      </span>
+                                    </div>
+                                    <div class="col-6">
+                                      <span>
+                                        Consuntivo
+                                        <strong>12.55</strong>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- Single Box -->
+                                <div class="right__card--box border-b-r">
+                                  <div class="percentage-box">
+                                    <span class="percentage__ver">
+                                      20%
+                                    </span>
+                                    <span class="percentage__const">
+                                      /20%
+                                    </span>
+                                  </div>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            
+                            
+                            
+
+                          </div>
+                          <div class="sldier-box">
+                            <div class="range">
+                              <input type="range" min="1" max="7" steps="1" value="1">
+                            </div>
+                              <ul class="range-labels">
+                                <li class="active selected">
+                                  <span> <i class="fal fa-euro-sign"></i> 3,000</span>
+                                </li>
+                                <li>
+                                  <span> <i class="fal fa-euro-sign"></i> 3,000</span>
+                                </li>
+                                <li>
+                                  <span> <i class="fal fa-euro-sign"></i> 3,000</span>
+                                </li>
+                                <li>
+                                  <span> <i class="fal fa-euro-sign"></i> 3,000</span>
+                                </li>
+                                <li>
+                                  <span> <i class="fal fa-euro-sign"></i> 3,000</span>
+                                </li>
+                                <li>
+                                  <span> <i class="fal fa-euro-sign"></i> 3,000</span>
+                                </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="align-middle"> <img src="images/avater-sm.png" alt=""> </td>
+                    <td class="align-middle">Pilio Bado</td>
+                    <td class="align-middle">Task Manager</td>
+                    <td class="align-middle">Civate</td>
+                    <td class="align-middle"> <i class="fal fa-euro-sign"></i> 10,000</td>
+                    <td class="align-middle">Reparti Macelleria Polleria</td>
+                    <td class="align-middle"><i class="fal fa-euro-sign"></i> 10,000</td>
+                    <td class="align-middle">
+                      <div class="status-wrap status-pending">
+                        <span class="status-dot"></span>
+                        Pending
+                      </div>
+                    </td>
+                    <td class="align-middle">
+                      <div class="table-btns">
+                        <button class="btn btn-edit"><i class="fal fa-pencil"></i></button>
+                        <button class="btn btn-close"><i class="fal fa-times"></i></button>
+                        <button class="btn btn-select"><i class="fal fa-check"></i></button>
+                        <button class="btn row-expand"><i class="fas fa-caret-down"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle"> <img src="images/avater-sm.png" alt=""> </td>
+                    <td class="align-middle">Pilio Bado</td>
+                    <td class="align-middle">Task Manager</td>
+                    <td class="align-middle">Civate</td>
+                    <td class="align-middle"> <i class="fal fa-euro-sign"></i> 10,000</td>
+                    <td class="align-middle">Reparti Macelleria Polleria</td>
+                    <td class="align-middle"><i class="fal fa-euro-sign"></i> 10,000</td>
+                    <td class="align-middle">
+                      <div class="status-wrap status-pending">
+                        <span class="status-dot"></span>
+                        Pending
+                      </div>
+                    </td>
+                    <td class="align-middle">
+                      <div class="table-btns">
+                        <button class="btn btn-edit"><i class="fal fa-pencil"></i></button>
+                        <button class="btn btn-close"><i class="fal fa-times"></i></button>
+                        <button class="btn btn-select"><i class="fal fa-check"></i></button>
+                        <button class="btn row-expand"><i class="fas fa-caret-down"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle"> <img src="images/avater-sm.png" alt=""> </td>
+                    <td class="align-middle">Pilio Bado</td>
+                    <td class="align-middle">Task Manager</td>
+                    <td class="align-middle">Civate</td>
+                    <td class="align-middle"> <i class="fal fa-euro-sign"></i> 10,000</td>
+                    <td class="align-middle">Reparti Macelleria Polleria</td>
+                    <td class="align-middle"><i class="fal fa-euro-sign"></i> 10,000</td>
+                    <td class="align-middle">
+                      <div class="status-wrap status-pending">
+                        <span class="status-dot"></span>
+                        Pending
+                      </div>
+                    </td>
+                    <td class="align-middle">
+                      <div class="table-btns">
+                        <button class="btn btn-edit"><i class="fal fa-pencil"></i></button>
+                        <button class="btn btn-close"><i class="fal fa-times"></i></button>
+                        <button class="btn btn-select"><i class="fal fa-check"></i></button>
+                        <button class="btn row-expand"><i class="fas fa-caret-down"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle"> <img src="images/avater-sm.png" alt=""> </td>
+                    <td class="align-middle">Pilio Bado</td>
+                    <td class="align-middle">Task Manager</td>
+                    <td class="align-middle">Civate</td>
+                    <td class="align-middle"> <i class="fal fa-euro-sign"></i> 10,000</td>
+                    <td class="align-middle">Reparti Macelleria Polleria</td>
+                    <td class="align-middle"><i class="fal fa-euro-sign"></i> 10,000</td>
+                    <td class="align-middle">
+                      <div class="status-wrap status-pending">
+                        <span class="status-dot"></span>
+                        Pending
+                      </div>
+                    </td>
+                    <td class="align-middle">
+                      <div class="table-btns">
+                        <button class="btn btn-edit"><i class="fal fa-pencil"></i></button>
+                        <button class="btn btn-close"><i class="fal fa-times"></i></button>
+                        <button class="btn btn-select"><i class="fal fa-check"></i></button>
+                        <button class="btn row-expand"><i class="fas fa-caret-down"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle"> <img src="images/avater-sm.png" alt=""> </td>
+                    <td class="align-middle">Pilio Bado</td>
+                    <td class="align-middle">Task Manager</td>
+                    <td class="align-middle">Civate</td>
+                    <td class="align-middle"> <i class="fal fa-euro-sign"></i> 10,000</td>
+                    <td class="align-middle">Reparti Macelleria Polleria</td>
+                    <td class="align-middle"><i class="fal fa-euro-sign"></i> 10,000</td>
+                    <td class="align-middle">
+                      <div class="status-wrap status-pending">
+                        <span class="status-dot"></span>
+                        Pending
+                      </div>
+                    </td>
+                    <td class="align-middle">
+                      <div class="table-btns">
+                        <button class="btn btn-edit"><i class="fal fa-pencil"></i></button>
+                        <button class="btn btn-close"><i class="fal fa-times"></i></button>
+                        <button class="btn btn-select"><i class="fal fa-check"></i></button>
+                        <button class="btn row-expand"><i class="fas fa-caret-down"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                  
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--======================================================
+    JS Files
+    ==========================================================-->
+    <script src="js/modernizr-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

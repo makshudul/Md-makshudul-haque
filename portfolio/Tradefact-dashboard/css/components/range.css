@@ -1,0 +1,86 @@
+
+
+  .slider-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: 15px 0;
+  }
+  input[type='range'] {
+    position: relative;
+    z-index: 9999;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background: transparent;
+    height: 2px;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-shadow:none;
+    background-color: #E5E5E5;
+  }
+  input[type='range']::-webkit-slider-thumb {
+    position: relative;
+    -webkit-appearance: none;
+            appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 99999;
+    -webkit-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+    
+  }
+
+  input[type='range']::-moz-range-track {
+    background: transparent;
+  }
+  input[type='range']::-moz-range-thumb {
+    position: relative;
+    -moz-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 99999;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+    
+  }
+
+.fill {
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    height: 3px;
+    width: 0%;
+}
+
+
+.progress_complete .fill {
+    background-color: #2BC585;
+}
+.progress_complete input[type='range']::-moz-range-thumb{
+    border-color: #2BC585;
+}
+.progress_complete input[type='range']::-webkit-slider-thumb {
+    border-color: #2BC585;
+}
+
+.progress_delay .fill {
+    background-color: #E66054;
+}
+.progress_delay input[type='range']::-moz-range-thumb{
+    border-color: #E66054;
+}
+.progress_delay input[type='range']::-webkit-slider-thumb {
+    border-color: #E66054
+}

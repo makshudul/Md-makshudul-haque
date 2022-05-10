@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'gelion_regular';
+    src: url('../fonts/gelion-regular-webfont.woff2') format('woff2'),
+         url('../fonts/gelion-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'gelionlight';
+    src: url('../fonts/gelion-light-webfont.woff2') format('woff2'),
+         url('../fonts/gelion-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gelion_bold';
+    src: url('../fonts/gelion-bold-webfont.woff2') format('woff2'),
+         url('../fonts/gelion-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'gelionmedium';
+    src: url('../fonts/gelion-medium-webfont.woff2') format('woff2'),
+         url('../fonts/gelion-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a,a:hover{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: $line-height;
+    background-color: $white;
+    color: $primary-color;
+    font-weight: $font-weight;
+    letter-spacing: -0.02;
+}
+body.bg-light{
+    background-color: #E5E5E5 !important;
+}
+.space-y{
+    padding:  140px 0;
+}
+span.br{
+    display: block;
+}
+.box_round_shadow{
+    border-radius: 15px;
+    @include box-shadow(0, 10px, 20px, rgba(0,0,0,0.06))
+}
+@media all and (max-width:991px){
+    span.br{
+        display: none;
+    }
+}
+@media all and (min-width:1440px){
+    
+}

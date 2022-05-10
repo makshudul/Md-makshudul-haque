@@ -1,0 +1,40 @@
+.side_bar{
+    .side_bar__title{
+       margin-bottom: 20px;
+       h3{
+            font-size: 16px;
+            font-weight: 600;
+            color: $info;
+       }
+    }
+
+    .category__lists{
+        .category__item{
+            display: block;
+            border-bottom: 1px solid $light-gray;
+            padding:10px 40px 10px 0;
+            &:last-child{
+                border: none;
+            }
+            &--selected{
+                position: relative;
+                &::after{
+                    content: '';
+                    width: 24px;
+                    height: 24px;
+                    background-image: url('../images/check-green.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 10px;
+                }
+            }
+            a{
+                color: $primary-color;
+                font-size: 14px;
+            }
+        }
+    }
+}

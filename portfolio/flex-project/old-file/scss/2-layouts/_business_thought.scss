@@ -1,0 +1,134 @@
+.business_thought-section {
+    padding-top: 220px;
+    padding-bottom: 160px;
+
+    .business_thought__card {
+        width: 46%;
+
+        .business_thought__card__desc {
+            p {
+                font-size: 14px;
+                line-height: 50px;
+            }
+            span{
+                font-family: $f-amalfi_coastregular;
+                font-size: 80px;
+                line-height: 50px;
+                color: rgba(0,0,0,0.10);
+                display: block;
+                margin-top: 50px;
+                margin-bottom: -50px;
+            }
+        }
+
+        .business_thought__card__btn {
+            margin-top: 190px;
+
+            .btn {
+                border: 1px solid $black-400;
+                min-width: 360px;
+                height: 80px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+        .business_thought__card__img {
+            height: 100%;
+            position: relative;
+
+            &--1 {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 90%;
+            }
+
+            &--2 {
+                position: absolute;
+                bottom: 5px;
+                left: -25px;
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media all and (min-width:1024px) and (max-width:1440px){
+    .business_thought-section {
+        padding-top: 180px;
+        padding-bottom: 160px;
+    
+        .business_thought__card {
+            width: 48%;
+            .section__head h3 {
+                font-size: 34px;
+                line-height: 50px;
+            }
+            .business_thought__card__desc {
+                p {
+                    font-size: 12px;
+                    line-height: 50px;
+                }
+            }
+    
+            .business_thought__card__btn {
+                margin-top: 115px;
+                
+            }
+        }
+    }
+    
+}
+@media all and (max-width:991px) {
+    .business_thought-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        .business_thought__card {
+            width: 100%;
+
+            .business_thought__card__desc {
+                p {
+                    font-size: 12px;
+                    line-height: 32px;
+                }
+                span{
+                    font-size: 30px;
+                    margin-bottom: 0px;
+                }
+            }
+
+            .business_thought__card__btn {
+                margin-top: 50px;
+
+                .btn {
+                    min-width: 160px;
+                    width: 100%;
+                    margin-bottom: 50px;
+                }
+            }
+
+            .business_thought__card__img {
+                height: 100%;
+                position: relative;
+
+                &--1 {
+                    position: static;
+                    top: 0;
+                    right: 0;
+                    width: 50%;
+                }
+
+                &--2 {
+                    position: absolute;
+                    bottom: 31px;
+                    right: auto;
+                    width: 50%;
+                    left: 35%;
+                }
+            }
+        }
+    }
+}

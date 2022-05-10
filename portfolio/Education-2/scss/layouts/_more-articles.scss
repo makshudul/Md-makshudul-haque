@@ -1,0 +1,49 @@
+.more-articles{
+    padding-top: 200px !important;
+    .more-articles__card{
+        h3{
+            font-size: 32px;
+            color: $yellow;
+            
+        }
+    }
+    .articles__card__items{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .articles__card__item{
+            display: block;
+            width: 26%;
+            text-align: center;
+            margin-bottom: 30px;
+            p{
+                font-size: 16px;
+                color: $text-color;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+
+@media all and (max-width:991px){
+    .more-articles{
+        padding-top: 100px !important;
+        .more-articles__card{
+            margin-bottom: 40px;
+            h3{
+                font-size: 24px;
+                color: $yellow;
+                
+            }
+        }
+        .articles__card__items{
+            .articles__card__item{
+                width: 40%;
+                
+            }
+        }
+    }
+    
+}

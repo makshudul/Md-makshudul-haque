@@ -1,0 +1,88 @@
+.video__gallery{
+    margin-top: 60px;
+    .video__gallery__head{
+        padding: 20px  20px 20px 0;
+        border-right: 2px solid $yellow;
+        margin-bottom: 40px;
+        h3{
+            font-size: 25px;
+            font-weight: $font-medium;
+            margin-bottom: 0;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    .read__more{
+        .btn{
+            width: 280px;
+            height: 45px;
+        }
+    }
+
+    .video__card{
+        .video__card__video{
+            video{
+                width: 100%;
+            }
+        }
+        .video__card__img{
+            position: relative;
+            img{
+                width: 100%;
+            }
+            .video__card__caption{
+                position: absolute;
+                left: 0;
+                bottom: 25px;
+                width: 100%;
+                background-color: $blue;
+                padding: 10px;
+                h3{
+                    font-size: 18px;
+                    font-weight: $font-normal;
+                    margin-bottom: 0;
+                    color: $white;
+                }
+            }
+        }
+        .video__card__desc{
+            margin-top: 10px;
+            h3{
+                font-size: 17px;
+                font-weight: $font-medium;
+                margin-bottom: 5px;
+                color: $text-color;
+            }
+            p{
+                line-height: 20px;
+                color: $text-color;
+            }
+            
+        }
+
+        &--big{
+            .video__card__img{
+                .video__card__caption{
+                    bottom: 35px;
+                    h3{
+                        font-size: 20px;
+                    }
+                }
+            }
+            .video__card__desc{
+                margin-top: 10px;
+                
+            }
+        }
+    }
+}
+
+@media all and (max-width:991px){
+    .video__gallery{
+        .video__card{
+            margin-bottom: 30px;
+            display: block;
+        }
+    }
+}

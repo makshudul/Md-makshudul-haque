@@ -1,0 +1,62 @@
+.contact-section{
+    .contact__form{
+        .contact__form__head{
+            h3{
+                font-size: 20px;
+                margin-bottom: 50px;
+            }
+        }
+        .contact__form__inputs{
+            label{
+                color: $black-light;
+                span{
+                    color: $yellow;
+                }
+            }
+            .form-control{
+                border-radius: 0;
+                &:focus{
+                    border-color: $yellow;
+                    box-shadow: none;
+                }
+            }
+
+            .btn-primary{
+                width: 140px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .contact__info{
+        padding-top: 100px;
+
+        .row{
+            margin-bottom: 30px;
+
+            .col-4{
+                text-align: left;
+
+                i{
+                    font-size: 32px;
+                    color: $gray;
+                }
+                
+            }
+            &:nth-child(1){
+                .col-4{
+    
+                    i{
+                        font-size: 48px;
+                    }
+                    
+                }
+            }
+
+            h3{
+                font-size: 20px;
+                margin-bottom:5px;
+            }
+        }
+    }
+}

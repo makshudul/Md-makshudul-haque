@@ -1,0 +1,200 @@
+.custom__card {
+    .custom__card__img {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .custom__card__caption {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            bottom: 15px;
+            padding: 10px 15px;
+            font-size: 18px;
+            line-height: 18px;
+        }
+    }
+
+    .custom__card__desc {
+        margin-top: 15px;
+
+        h3 {
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: $font-medium;
+            margin-bottom: 3px;
+            color: $text-color;
+        }
+
+        p {
+            font-size: 17px;
+            color: $text-color;
+        }
+    }
+}
+
+
+// custom__popup__card
+.custom__popup__card {
+    position: absolute;
+    width: 355px;
+    @include box-shadow(0, 3px, 6px, rgba(0, 0, 0, 0.16));
+    padding: 25px;
+    top: -112px;
+    background-color: $white;
+    z-index: 9;
+
+    &.position_right {
+        right: -86px;
+
+        .custom__popup__card__img {
+            border-radius: 12px 12px 12px 100px;
+
+        }
+
+        &.position_right_bottom{
+            .custom__popup__card__img {
+                border-radius: 12px 100px 12px 12px;
+                margin-top: 30px;
+    
+            }
+        }
+    }
+
+    &.position_left {
+        left: -86px;
+        .custom__popup__card__img {
+            border-radius: 12px 12px 100px 12px;
+        }
+    }
+
+    .custom__popup__card__img {
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .custom__popup__card__heading {
+        margin: 15px 0;
+
+        h3 {
+            font-size: 17px;
+            font-weight: $font-normal;
+            color: $yellow;
+        }
+    }
+
+    .custom__popup__card__list {
+        margin-bottom: 80px;
+
+        ul {
+            li {
+                display: block;
+                margin-bottom: 5px;
+                font-size: 15px;
+
+                span {
+                    font-size: 13px;
+                    margin-left: 10px;
+
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .payers_time{
+        margin-bottom: 20px;
+        ul{
+            li{
+                display: flex;
+                justify-content: space-between;
+                padding: 3px 0;
+                font-size: 12px;
+                line-height: 18px;
+
+                span{
+                    i{
+                        color: $yellow;
+                        margin-right: 10px;
+                    }
+                }
+
+            }
+        }
+    }
+    .daliy_study{
+        margin-bottom: 30px;
+        ul{
+            li{
+                font-size: 13px;
+                margin-bottom: 10px;
+                span{
+                    i{
+                        color: $yellow;
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .custom__popup__card__footer {
+        .btn {
+            color: $text-color;
+
+            i {
+                color: $yellow;
+                font-size: 18px;
+            }
+
+            span {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: 20px;
+                height: 22px;
+                background-color: $yellow;
+                border-radius: 20px 2px 2px 2px;
+                margin-right: 8px;
+
+                i {
+                    color: $white;
+                    font-size: 8px;
+
+                }
+            }
+        }
+    }
+}
+
+
+@media all and (min-width:991px) and (max-width:1440px){
+   
+    // custom__popup__card
+    .custom__popup__card {
+        width: 340px;
+        padding: 15px;
+    }
+}
+
+@media all and (max-width:991px){
+    .custom__card {
+        margin-bottom: 30px;
+        display: block;
+    }
+    
+    // custom__popup__card
+    .custom__popup__card {
+        position: static;
+        width: 100%;
+        margin-bottom: 30px;
+
+    }
+    
+}

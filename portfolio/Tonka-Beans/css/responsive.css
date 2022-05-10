@@ -1,0 +1,153 @@
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+
+
+}
+
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+  .navbar-default {
+  	padding: 20px 0px;
+    background-color: #481B16;
+  }
+  .main-header {
+  	background-size: contain;
+  	height: auto;
+    background-image: url('../images/mobile-bg.png');
+  }
+
+  .hero-inner {
+    margin-top: 150px;
+    text-align: center;
+  }
+  .hero-inner h1 {
+  	font-size: 60px;
+  	line-height: 60px;
+    text-align: left;
+  }
+  .hero-inner p{
+    text-align: left;
+  }
+  .bottom-indicator {
+  	display: none;
+  }
+  .hero-inner h1.h1-style {
+      	margin-left: 70px;
+      }
+  .hero-inner span::after {
+  	left: 28%;
+  }
+  .single-features span{
+    display: none;
+  }
+  .single-features h4{
+    text-align: left;
+  }
+  .first-features h4::after {
+    	left: -41px;
+    }
+    .single-features h4 {
+    	font-size: 13px;
+    	margin-bottom: 20px;
+    }
+    .third-features h4:nth-child(2) {
+    	margin-left: 0;
+    }
+    .first-features {
+    	padding-left: 51px;
+    }
+    .contact-img {
+    	display: none;
+    }
+    .contact-inner-box h3 {
+    	font-size: 17px;
+    	font-style: italic;
+    	color: #E39E4C;
+    	margin-bottom: 30px;
+    }
+    .contact-inner-box {
+    	width: 100%;
+    	padding: 20px;
+    }
+    .form-box-flex {
+    	display: block;
+    }
+    .form-fileds {
+    	width: 100%;
+    }
+    .form-sub-btn {
+    	width: 100%;
+    	margin-left: 0;
+    	text-align: right;
+    }
+    .footer-menu ul li a {
+    	font-size: 11px;
+    	font-weight: 600;
+    	color: #202020;
+    	padding: 0 2px;
+    }
+    .footer-menu{
+      margin-bottom: 15px;
+    }
+    .navbar-default .navbar-collapse {
+    	background-color: #481B16;
+      border-color: transparent;
+      margin-top: 15px;
+    }
+    .navbar-default .navbar-nav > li > a {
+    	color: #fff;
+
+    }
+    .navbar-default .navbar-toggle {
+    	border-color: transparent;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+    	background-color: #B05627;
+    }
+    .contact-bg{
+      background-image: url('../images/bg-contact.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: block;
+    }
+    .third-features h4::after {
+    	background: url('../images/mobile-dot.png') no-repeat;
+    	width: 15px;
+    	height: 15px;
+    	position: absolute;
+    	left: -12px;
+    	top: 3px;
+    	content: '';
+    }
+    .third-features {
+    	padding-left: 0;
+    }
+    .shop-content {
+      	padding-top: 70px;
+      	background-size: contain;
+      }
+      .shop-content span{
+        display: inline-block;
+        margin-top: 0px;
+        margin-left: 35px;
+
+      }
+      .shop-content span img{
+        width: 70%
+
+      }
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+}

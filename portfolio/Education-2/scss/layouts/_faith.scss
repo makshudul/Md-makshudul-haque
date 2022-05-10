@@ -1,0 +1,13 @@
+.faith-section{
+    position: relative;
+    &.padding__extra_b{
+        padding-bottom: 150px;
+    }
+}
+@media all and (max-width:991px){
+    .faith-section{
+        &.padding__extra_b{
+            padding-bottom:0px !important;
+        }
+    }
+}

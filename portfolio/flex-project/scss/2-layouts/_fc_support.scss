@@ -1,0 +1,90 @@
+.fc_support-section {
+    text-align: center;
+    padding: 150px 0;
+
+    .fc__support__inner {
+        width: 60%;
+        overflow: hidden;
+        height: 300px;
+        margin: auto;
+        position: relative;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .fc__support__inner__overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.30);
+            left: 0;
+            top: 0;
+            z-index: 9999;
+            padding-top: 50px;
+
+            h3 {
+                font-size: 70px;
+                line-height: 100px;
+                font-weight: $txt-400;
+                color: $white-400;
+            }
+
+            span {
+                display: block;
+                color: $white-400;
+            }
+
+            .btn {
+                margin-top: 30px;
+                height: 50px;
+                color: $black-400;
+                min-width: 300px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: space-between;
+
+                span {
+                    color: $black-400;
+                }
+
+                &:hover {
+                    span {
+                        color: $white-400;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media all and (min-width:2200px) {
+    .fc-section .fb__img {
+        width: 40%;
+    }
+}
+@media all and (max-width:991px) {
+    .fc_support-section {
+        text-align: center;
+        padding: 50px 0;
+
+        .fc__support__inner {
+            width: 100%;
+
+            .fc__support__inner__overlay {
+              
+                h3 {
+                    font-size: 32px;
+                    line-height: 60px;
+                }
+
+            }
+        }
+    }
+
+}
+

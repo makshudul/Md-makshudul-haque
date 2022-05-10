@@ -1,0 +1,43 @@
+.azwar-section{
+    background-image: url('../images/ppp.png');
+    background-repeat: no-repeat;
+    background-position: -30% 60%;
+    .azwar__card{
+        p{
+            font-size: 18px;
+            line-height: 32px;
+        }
+        .azwar__card__link{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a.azwar__read_more{
+                color: $yellow;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media all and (max-width:991px){
+    .azwar-section{
+        background-image: url('../images/ppp.png');
+        background-repeat: no-repeat;
+        background-position: -30% 60%;
+        .azwar__card{
+            p{
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .azwar__card__link{
+                margin-top: 30px;
+    
+                a.azwar__read_more{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

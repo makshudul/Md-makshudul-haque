@@ -1,0 +1,65 @@
+.card-section{
+    .card__inner{
+        margin-top: 80px;
+
+        .card__item{
+            background-color: $gray-thin;
+            border-radius: 5px;
+            padding: 40px;
+            height: 420px;
+            display: block;
+            border: 2px solid transparent;
+            transition: border 300ms;
+            &:hover{
+                border-color: $blue;
+            }
+
+            .card__head{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 50px;
+                    margin-right: 20px;
+                }
+                span{
+                    color: $gray;
+                }
+               
+            }
+            .card__content{
+                h3{
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin: 20px 0;
+                    color: $black;
+                }
+                p{
+                    color: $black;
+                }
+            }
+        }
+    }
+   
+}
+
+@media all and (max-width:991px){
+    .card-section{
+        .card__inner{
+            margin-top: 40px;
+            .card__item{
+                margin-bottom: 20px;
+                &:hover{
+                    border-color: $blue;
+                }
+                .card__content{
+                    h3{
+                        font-size: 18px;
+                        margin: 10px 0;
+                    }
+                    
+                }
+            }
+        }
+       
+    }
+}

@@ -1,0 +1,137 @@
+.brand-section{
+    padding: 160px 0;
+    background-color: $gray-500;
+    &.custom_margin{
+        margin-top: 120px;
+    }
+    .custom_margin{
+        margin-top: 120px;
+    }
+    .brand__card{
+        width: 48%;
+        background-color: $white-400;
+        margin-bottom: 60px;
+        .brand__card__content{
+            display: flex;
+            justify-content: space-between;
+
+            .brand__card__logo{
+                width: 50%;
+                padding: 100px 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 460px;
+            }
+            .brand__card__cover{
+                width: 50%;
+                height: 460px;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .brand__card__link{
+            .btn{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                font-family:$f-noto_serif_myanmar_regular;
+                font-size: 30px;
+                font-weight: $txt-400;
+                letter-spacing: 1px;
+                height: 70px;
+                padding-top: 45px;
+                &:focus{
+                    outline: 0;
+                }
+                span{
+                    display: inline-block;
+                }
+               
+            }
+        }
+    }
+}
+
+
+
+@media all and (min-width:1024px) and (max-width:1440px) {
+   
+    .brand-section{
+        
+    
+        .brand__card{
+            .brand__card__content{
+    
+                .brand__card__logo{
+                    height: 400px;
+
+                    img{
+                        width: 80%;
+                    }
+                }
+                .brand__card__cover{
+                    height: 400px;
+    
+                    
+                }
+            }
+            .brand__card__link{
+                .btn{
+                    font-size: 20px;
+                }
+            }
+         
+        }
+    }
+    
+}
+
+@media all and (max-width:991px) {
+ 
+    .brand-section{
+        padding:100px 0;
+        &.custom_margin{
+            margin-top: 60px;
+        }
+        .custom_margin{
+            margin-top: 60px;
+        }
+        .brand__card{
+            width: 100%;
+            margin-bottom: 40px;
+            .brand__card__content{
+                flex-wrap: wrap;
+                flex-direction: column-reverse;
+    
+                .brand__card__logo{
+                    width: 100%;
+                    padding: 100px 50px;
+                    height: 350px;
+                }
+                .brand__card__cover{
+                    width: 100%;
+                    height: 350px;
+    
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .brand__card__link{
+                .btn{
+                    font-size: 20px;
+                    
+                }
+            }
+        }
+    }
+    
+}

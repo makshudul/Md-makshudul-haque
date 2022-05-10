@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="22" viewBox="0 0 10 22">
+  <g id="Group_3641" data-name="Group 3641" transform="translate(-0.058)">
+    <g id="Rounded_Rectangle_13_copy" data-name="Rounded Rectangle 13 copy" transform="translate(0.058)" fill="#d3ffd9" stroke="#34c25e" stroke-linejoin="round" stroke-width="1">
+      <rect width="10" height="22" rx="5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="9" height="21" rx="4.5" fill="none"/>
+    </g>
+    <g id="Group_3640" data-name="Group 3640" transform="translate(4 7)">
+      <rect id="Rectangle_3653" data-name="Rectangle 3653" width="2" height="2" transform="translate(0.058)" fill="#018f2b"/>
+      <rect id="Rectangle_3654" data-name="Rectangle 3654" width="2" height="2" transform="translate(0.058 3)" fill="#018f2b"/>
+      <rect id="Rectangle_3655" data-name="Rectangle 3655" width="2" height="2" transform="translate(0.058 6)" fill="#018f2b"/>
+    </g>
+  </g>
+</svg>

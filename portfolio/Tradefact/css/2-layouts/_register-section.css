@@ -1,0 +1,9 @@
+.register-section {
+  padding: 100px 0; }
+  .register-section .register__progress ul li {
+    display: block;
+    margin: 55px; }
+    .register-section .register__progress ul li a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }

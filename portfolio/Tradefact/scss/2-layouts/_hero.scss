@@ -1,0 +1,53 @@
+// hero-section
+.hero-section{
+    padding: 80px 0 160px 0;
+    position: relative;
+    overflow: hidden;
+    .hero-map{
+        position: absolute;
+        right: -165px;
+        top: -60px;
+        width: 100%;
+        max-width: 800px;
+        z-index: -1;
+        img{
+            width: 100%;
+        }
+        
+    }
+    .hero__inner{
+        h3{
+            font-size: 45px;
+            line-height: 50px;
+            font-family: $font-stack-sen;
+            color: $black;
+            font-weight: bold;
+        }
+    }
+}
+
+
+@media all and (max-width:991px){
+    .hero-section{
+        padding: 80px 0;
+        .hero-map{
+            display: none;
+        }
+        .hero__inner{
+            h3{
+                font-size: 32px;
+                line-height: 42px;
+                
+            }
+        }
+    }
+}
+
+@media all and (min-width:1440px){
+    .hero-section{
+        padding: 140px 0 160px 0;
+            top: 0px;
+            
+        }
+       
+}

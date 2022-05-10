@@ -1,0 +1,82 @@
+.recommened-section{
+
+    .recommened__card{
+        .recommened__card__img{
+            position: relative;
+            img{
+                width: 100%;
+            }
+            .recommened__card__caption{
+                position: absolute;
+                bottom: 15px;
+                left: 0;
+                width: 100%;
+                background-color: $blue;
+                padding: 15px 30px;
+                h3{
+                    font-size: 18px;
+                    font-weight: $font-normal;
+                    color: $white;
+                    margin-bottom: 0;
+                }
+                p{
+                    color: $white;
+                    font-size:16px;
+                    font-weight: $font-normal;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
+    }
+    .recommened__card__carousel{
+        
+        padding: 80px;
+        h3{
+            font-size: 28px;
+            font-weight: $font-bold;
+            color: $yellow;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 26px;
+            line-height: 36px;
+            font-weight: $font-medium;
+        }
+    }
+    .box_shdow{
+        @include box-shadow(0,3px,6px, rgba(0,0,0,0.16));
+    }
+}
+
+@media all and (min-width:991px) and (max-width:1440px){
+    .recommened-section{
+        .recommened__card__carousel{
+            padding: 30px;
+            h3{
+                font-size: 24px;
+            }
+            p{
+                font-size: 14px;
+                line-height:24px;
+            }
+        }
+        
+    }
+}
+
+@media all and (max-width:991px){
+    .recommened-section{
+        .recommened__card__carousel{
+            padding: 30px;
+            h3{
+                font-size: 24px;
+            }
+            p{
+                font-size: 18px;
+                line-height:24px;
+            }
+        }
+        
+    }
+}

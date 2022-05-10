@@ -1,0 +1,49 @@
+$font-family: 'Poppins', sans-serif;
+$font-size: 14px;
+$line-height:24px;
+$font-weight:300;
+
+
+// colors
+$black:#5F6267;
+$gray: #5F6267;
+$light-gray:#E0E0E0;
+$dark-gray:#AFAFAF;
+$light-green:#F8FBFF;
+$thin-green:#F4F8FF;
+$dark:#31353B;
+$blue:#164CA7;
+$blue-light:#44B5F0;
+$theme-green:#30DB6B;
+$dark-white:#F8F8F8;
+// Colors
+// Border 
+
+$primary-color:$black;
+$theme-color:$blue;
+
+// bootstrap variable overwrite
+$primary:$blue;
+$info:$blue-light;
+$green:$theme-green;
+
+// Spacer
+$spacer: 1.6rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3)
+  ),
+  $spacers
+);
+
+
+// Border Radius
+$border-radius:               4px !default;
+$border-radius-lg:           4px !default;
+$border-radius-sm:           6px !default;

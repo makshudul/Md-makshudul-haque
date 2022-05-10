@@ -1,0 +1,193 @@
+/* modal_form_box */
+.modal_form_box{
+    padding:0 10px;
+}
+.form_input{
+    margin-bottom: 20px;
+}
+.form_input label{
+    display: block;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #95AAC9;
+}
+.form_input .form-control{
+    background: #FFFFFF;
+    border: 1px solid #EDF2F9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #12263F;
+    height: 35px;
+}
+.form_input textarea.form-control{
+    background: #F7F7FA;
+    border: 1px solid #EDF2F9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #12263F;
+    height: auto;
+}
+.form_input .custom-select{
+    border: 1px solid #EDF2F9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #12263F;
+    height: 35px;
+}
+.reference__product{
+    margin: 40px 0;
+    display: block;
+}
+.ref_product_btn{
+    margin-bottom: 30px;
+}
+.reference__product h3{
+    display: block;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #95AAC9;
+    margin-bottom: 10px;
+}
+
+
+.ref_product_btn .btn{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 21px;
+    padding: 0 20px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.ref_product_btn .btn.active_btn{
+    background-color: #0275D8;
+    color: #fff;
+}
+
+.item_guide h3{
+    display: block;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #95AAC9;
+    margin-bottom: 10px;
+}
+.item_guide label{
+    font-weight: 500;
+    font-size: 14px;
+    color: #12263F;
+    line-height: 22px;
+}
+
+
+
+.modal-footer {
+    border-top: 1px solid #EDF2F9;
+}
+
+
+.Lithium_Batteries_components{
+    display: none;
+}
+.Magnetic_Properties_components{
+    display: none;
+}
+.Hazerdous_Materials_components{
+    display: none;
+}
+.Lithium_Batteries_components.show{
+    display: flex
+}
+.Magnetic_Properties_components.show{
+    display: flex
+}
+.Hazerdous_Materials_components.show{
+    display: flex
+}
+
+.search_pro_catalogue_box .table_search .form-control{
+    width: 100%;
+}
+.search_pro_catalogue_box .table_search{
+    margin-bottom: 30px;
+}
+.search_pro_catalogue_box .table_search .btn-search{
+    width: 40px;
+}
+.search_pro_catalogue_box .table_box{
+    padding: 0;
+}
+.search_pro_catalogue_box .table td:last-child, 
+.search_pro_catalogue_box .table th:last-child {
+    text-align: right;
+}
+.table_search .form-inline {
+   justify-content: space-between;
+   flex-wrap: nowrap;
+}
+
+.custom-control-label{
+    cursor: pointer;
+}
+.custom-control-label::before {
+    border: #95AAC9 solid 2px;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #2C7BE5;
+    background-color: #2C7BE5;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    background-image: none;
+}
+
+
+@media all and (max-width:991px){
+    .mobile_icon.desktop_also {
+        margin-right: 0;
+    }
+    
+    .flex_head {
+        flex-wrap: wrap;
+        padding-right: 10px;
+    }
+    .tab_head ul li {
+        margin: 0 8px;
+        display: inline-block;
+    }
+    .tab_head ul li a {
+        padding: 12px 0;
+    }
+    .tab_head ul li:first-child {
+        margin-left: 10px;
+    }
+    .flex_head .table_search {
+        position: static;
+        padding: 0 10px;
+    }
+    .flex_head .table_box__header--right {
+        width: 100%;
+        justify-content: space-between;
+        margin:20px 0 15px 0;
+    }
+    .search_pro_catalogue_box .table_search {
+        position: static;
+    }
+    .modal-dialog {
+        margin: auto;
+    }
+    .table_location .custom-select {
+        width: 90px;
+    }
+}

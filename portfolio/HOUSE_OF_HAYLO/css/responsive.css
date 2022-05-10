@@ -1,0 +1,204 @@
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+
+
+}
+
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width:1200px) {
+    .navbar-default .navbar-nav > li > a {
+    	color: #000;
+    	text-transform: uppercase;
+    	font-size: 13px;
+    	font-family: 'Lora', serif;
+    	padding: 6px 5px;
+    }
+    .navbar-nav {
+    	margin: 22px 0 0 0px;
+    }
+    .header_social_icons li a i {
+    	font-size: 15px;
+    	color: #000;
+    	padding: 6px 5px;
+    	text-align: center;
+    }
+    .hero_text {
+    	padding: 35px;
+    	margin-top: 120px;
+    	margin-left: 0px;
+
+    }
+    .hero_area {
+    	background-position: 50% 0;
+    }
+    .sinlge_form input[type="text"] {
+    	margin-top: 30px;
+    }
+    .who__text_l {
+    	width: 95%;
+    	margin-left: 5%;
+    }
+    .who__text_l::after {
+    	top: 30px;
+    	left: 30px;
+    }
+    .who_text {
+    	padding: 30px 30px 0 30px;
+    }
+    .who_text p {
+    	font-size: 12px;
+    }
+    .who_text h3 {
+    	font-size: 18px;
+    }
+    .hear_text_l h3 {
+    	font-size: 26px;
+    }
+}
+
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    body {
+    	font-size: 12px;
+    	line-height: 20px;
+    }
+    .hero_area .container.mobile {
+    	padding-right: 0px;
+    	padding-left: 0px;
+    }
+    .hero_area .container.mobile .row {
+    	margin-right: 0px;
+    	margin-left: 0px;
+    }
+    .hero_area .container.mobile .row .col-md-11 {
+        padding-right: 0px;
+    	padding-left: 0px;
+    }
+    .navbar-default {
+    	background-color: #e584b1;
+        padding: 5px 0;
+    }
+    .navbar-nav {
+    	margin:10px 0 0 0px;
+        width: 100%;
+    }
+    .navbar-brand {
+    	float: left;
+    	height: auto;
+    	padding: 15px 10px;
+    }
+    .navbar-default .navbar-brand img{
+        width: 80%;
+    }
+    .navbar-default .navbar-toggle {
+    	border-color: transparent;
+        margin-top: 14px;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+    	background-color: #000;
+    }
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+    	background-color: #fff;
+    }
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:focus,
+    .navbar-default .navbar-nav > .active > a:hover {
+    	color: #000;
+    	background-color: #cf4082;
+    }
+    .navbar-default .navbar-nav > li > a:focus,
+    .navbar-default .navbar-nav > li > a:hover {
+    	color: #000;
+    	background-color: #cf4082;
+    }
+    .hero_area {
+    	padding-bottom: 50px;
+    	background-position: 67% 30%;
+    }
+    .hero_text {
+    	margin:15px;
+        padding: 30px 15px;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    .hero_text h3 {
+    	font-size: 20px;
+    }
+    .hero_text h1 {
+    	font-size: 30px;
+    	line-height: 24px;
+    }
+    .who_we_are {
+    	padding: 50px 0 25px 0;
+    }
+    .who__text_l {
+    	background-color: #e887b4;
+    	width: 94%;
+    	height: auto;
+    	padding: 100px 0;
+    	margin-left: 0;
+    }
+    .who__text_l::after {
+    	top: 15px;
+    	left: 15px;
+    }
+    .who__text_l h3 {
+    	font-size: 30px;
+    }
+    .who__text_l p {
+    	font-size: 12px;
+    }
+    .who_text {
+    	padding: 50px 0 0  0;
+    }
+    .hear_area {
+    	padding: 25px 0;
+    }
+    .hear_text_l {
+    	width: 95%;
+    	height: auto;
+    	margin-left: 5%;
+    	padding: 30px 10px;
+    }
+    .hear_text_l h3 {
+    	font-size: 30px;
+    }
+    .hear_text_l p {
+    	font-size: 12px;
+    }
+    .hear_text_l::after {
+    	top: -10px;
+    	left: -10px;
+    }
+    .shop_area {
+    	padding: 25px 0;
+    }
+    .contact_us_title {
+    	max-width: 100%;
+    }
+    .contact_us {
+    	padding: 25px 0;
+    }
+    .contact_us_title a {
+    	text-align: center;
+    	color: #000;
+    	padding: 0 20px;
+    	margin: 10px 0;
+    	display: inline-block;
+    }
+    .header_social_icons {
+    	padding-top: 6px;
+    	text-align: center;
+    }
+    .sinlge_form input[type="text"] {
+    	margin-top: 30px;
+    }
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+}

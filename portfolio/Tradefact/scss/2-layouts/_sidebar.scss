@@ -1,0 +1,59 @@
+.sidebar{
+    padding-right: 50px;
+    .sidebar__card{
+        h3{
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 500;
+            color: $black;
+            margin-bottom: 20px;
+        }
+    }
+    .sidebar__search{
+        .form-control{
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+    }
+    .sidebar__card--inner{
+        ul{
+            li{
+                display: block;
+                border-bottom: 1px solid $gray-light;
+                a{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 15px;
+                    color: $gray;
+                    padding: 8px 0;
+                }
+            }
+        }
+        .checkbok-dropdown{
+            border-top: 1px solid $gray-light;
+            padding-top: 8px;
+            display: none;
+        }
+        .checkbox__card{
+            
+            margin-bottom: 5px;
+            .custom-control-label {
+                font-size: 13px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+            .custom-checkbox .custom-control-label::before {
+                border-radius: 3px;
+            }
+            .custom-control-label::before {
+                border: $gray solid 1px;
+            }
+            .custom-control-input:checked ~ .custom-control-label::before {
+                
+                border-color: $blue;
+                background-color: $blue;
+            }
+        }
+    }
+}

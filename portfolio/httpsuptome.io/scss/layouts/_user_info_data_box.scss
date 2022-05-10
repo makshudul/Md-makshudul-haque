@@ -1,0 +1,84 @@
+.user_info_data_box{
+    margin-bottom: 50px;
+    .user_data_box__head{
+        margin-bottom: 20px;
+        h3{
+            font-size: 16px;
+            font-weight: 600;
+            color: $dark;
+        }
+    }
+
+    // user_data_box__cards
+    .user_data_box__cards{
+        display: flex;
+        flex-wrap: wrap;
+        .user_data_box__card{
+            width: 32%;
+            margin-right: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border: 1px solid $light-gray;
+            background-color: $light-green;
+            overflow: hidden;
+            &:hover{
+                @include box-shadow(0, 10px, 20px, rgba(0,0,0,0.06));
+            }
+            .user_data_box__card__head{
+                display: flex;
+                align-items: center;
+                padding: 14px;
+                position: relative;
+                border-bottom: 1px solid $light-gray;
+                background-color: $white;
+                border-radius: 5px 5px 0 0;
+                h3{
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: $primary;
+                    margin: 0 0 0 10px;
+                }
+                a{
+                    position: absolute;
+                    display: inline-block;
+                    top: 10px;
+                    right: 10px;
+                    opacity: 0;
+                    transition: opacity 300ms ease-in-out;
+                }
+            }
+
+            .user_data_box__card__content{
+                padding: 10px;
+                min-height: 60px;
+            }
+
+            &:hover{
+                .user_data_box__card__head{
+                    a{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+@media all and (max-width:991px){
+    .user_info_data_box{
+        .user_data_box__head{
+            h3{
+                font-size: 14px;
+            }
+        }
+    
+        // user_data_box__cards
+        .user_data_box__cards{
+            .user_data_box__card{
+                width: 46%;
+            }
+        }
+    }
+    
+}

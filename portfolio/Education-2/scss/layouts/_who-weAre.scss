@@ -1,0 +1,52 @@
+.who-weAre{
+    .who_we_are{
+        p{
+            margin-bottom: 30px;
+        }
+    }
+    .who_we_are_sliders{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .who_slider__card{
+            width: 45%;
+            text-align: center;
+
+            img{
+                width: 150px !important;
+                display: block;
+                margin: 0 auto;
+            }
+            h3{
+                font-size: 20px;
+                font-weight: $font-normal;
+                color: $black;
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .who_text_slider{
+        @include box-shadow(0,3px,6px,rgba(0,0,0,0.16));
+        max-width: 90%;
+        margin: auto;
+        height: 230px;
+        padding: 30px;
+        text-align: center;
+        h3{
+            font-size: 25px;
+            font-weight: $font-bold;
+        }
+
+        &.bg-blue-light{
+            background-color: $blue-light;
+
+            h3{
+                color: $white;
+            }
+            p{
+                color: $white;
+            }
+        }
+    }
+}

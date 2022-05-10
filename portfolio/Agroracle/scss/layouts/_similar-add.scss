@@ -1,0 +1,102 @@
+.similar-add{
+    .similar__add__inner{
+        background-color: #fff;
+        padding: 50px 0 0 0;
+        margin-bottom: 100px;
+
+        .similar_add_head{
+            text-align: center;
+            margin-bottom: 50px;
+            h3{
+                font-size: 36px;
+                color: #2A2A2A;
+                font-family: 'gelionmedium';
+                margin-bottom: 0;
+            }
+        }
+        .similar_add_carousel{
+            .search__result__card{
+                display: block;
+                background: #FFFFFF;
+                .search__result__card__img{
+                    img{
+                        width: 100%;
+                    }
+                }
+        
+                .search__result__card__content{
+                    box-shadow: 0px 12px 90px rgba(0, 0, 0, 0.17);
+                    padding: 20px;
+                    .search__result__card__title{
+                        h3{
+                            font-size: 20px;
+                            color: #2F2F2F;
+                            font-family: 'gelionmedium';
+                            margin: 0;
+                        }
+                        h6{
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #787878;
+                            font-family: 'gelion_regular';
+                            margin-top: 5px;
+                        }
+                    }
+                    .search__result__card__price{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        span{
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #787878;
+                            font-family: 'gelion_regular';
+                            margin-top: 5px;
+                        }
+                        h3{
+                            font-size: 26px;
+                            color: #2F2F2F;
+                            font-family: 'gelionmedium';
+                            margin: 0;
+                        }
+                    }
+                    .search__result__card__btn{
+                        margin-top: 25px;
+                        padding-bottom: 15px;
+                        text-align: center;
+                        .btn-primary{
+                            width: 140px;
+                            height: 40px;
+                            background: #E9F1E1;
+                            border-color: #E9F1E1;
+                            color: #789750;
+                            border-radius: 0px;
+        
+                            &:hover{
+                                background-color: #8CB25A;
+                                color: $white;
+                            }
+                           
+                        }
+                    }
+                }
+            }
+
+            .owl-nav.disabled + .owl-dots {
+                margin-top: 20px;
+                position: absolute;
+                width: 100%;
+            }
+            .owl-dots .owl-dot span {
+                width: 20px;
+                height: 8px;
+                background: #D4E6C3;
+            }
+            .owl-dots .owl-dot.active span, 
+            .owl-dots .owl-dot:hover span {
+                background: #90B75C;
+            }
+
+        }
+    }
+}

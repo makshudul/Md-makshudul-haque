@@ -1,0 +1,87 @@
+.patner-dashboard{
+    padding: 20px 0;
+    .patner-dashboard__left{
+        ul{
+            li{
+                display: block;
+                margin-bottom: 10px;
+                padding: 0 10px;
+                a{
+                    font-size: 16px;
+                    color: $gray;
+                    display: flex;
+                    align-items: center;
+                    padding: 10px;
+                    border-radius: 10px;
+                    &:hover{
+                        box-shadow: 0 0 3px rgba(0,0,0,0.3);
+                    }
+                    span{
+                        display: block;
+                        margin-right: 10px;
+                        img{
+                            width: 24px;
+                        }
+                    }
+                }
+            }
+            li.active {
+                a{
+                    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+                }
+            }
+        }
+    }
+
+    // patner-dashboard__right
+    .patner-dashboard__right{
+        padding: 60px 0 0 60px;
+
+        .patner-dashboard__notice{
+            margin-bottom: 50px;
+            p{
+                a{
+                    font-weight: 700;
+                    text-decoration: underline;
+                    color: $gray;
+                }
+            }
+        }
+        .dashboard__widget__card{
+            margin-bottom: 30px;
+        }
+        .widget-card__header{
+            height: 150px;
+            background-color: $gray-white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 5px 5px 0 0;
+            h3{
+                font-size: 32px;
+                font-weight: 500;
+                span{
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 20px;
+                }
+            }
+        }
+        .widget-card__dropdown{
+            background-color: $gray-light;
+            .custom-select{
+                border: none;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+@media all and (max-width:991px){
+    .patner-dashboard .patner-dashboard__right {
+        padding: 0;
+        margin-top: 50px;
+    }
+}

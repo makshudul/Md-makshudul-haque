@@ -1,0 +1,33 @@
+.about-section{
+    padding:0 0 100px 0;
+
+    .about__head{
+        h5{
+            font-size: 18px;
+            letter-spacing: 7px;
+            color: $gray;
+            margin-bottom: 0;
+        }
+        h3{
+            font-size: 42px;
+            line-height: 46px;
+        }
+       
+    }
+   
+}
+// about__cards
+.about__cards{
+    .about__card{
+        margin-bottom: 30px;
+        .about__card__title{
+            h3{
+                color: $yellow;
+                margin-bottom: 10px;
+                font-size: 24px;
+            }
+        }
+        
+    }
+}
+

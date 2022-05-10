@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tradefact</title>
+  <!-- Load styles.scss (or the compiled result of it ) however you like -->
+  <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="app.css">
+  <!-- Load jQuery and Bootstrap JS (but only if necessary, the less of this we have the better) -->
+  <script
+    src="http://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+    <!-- popper Js integrate with Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+    crossorigin="anonymous"
+  ></script>
+  <!-- Bootstrap -->
+  <script 
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+    crossorigin="anonymous"
+  ></script>
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/3aad479214.js"></script>
+  <!-- Custom Script -->
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+
+<div class="main_wrap">
+  <!-- Header Component  -->
+  <div class="header-section">
+    <!-- Header Left -->
+    <div class="header__left">
+      <a href="#" class="hamburger-menu"> <i class="fal fa-bars"></i> </a>
+      <a href="#" class="logo" title="Tradefact"> <img src="images/logo.png" alt="Tradefact"> </a>
+    </div>
+    <!-- Header Right -->
+    <div class="header__right">
+      <ul>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle notification__item" data-toggle="dropdown"> <span class="has_notification"></span> <i class="fal fa-bell"></i> </a>
+          <div class="dropdown-menu dropdown-menu-right notification__dropdown " aria-labelledby="dropdownMenuButton">
+            <div class="notification__head">
+              <h3>Notifications</h3>
+            </div>
+            <div class="notification__box">
+              <!-- Single Notification -->
+              <ul>
+                <!-- Single Notification -->
+                <li>
+                  <a href="#" class="notification__list shipment_change">
+                      <div class="notification__list--icon"><span><i class="fal fa-exclamation-triangle"></i></span></div>
+                      <div class="notification__list--desc">
+                        <h3>Shipment 12345 requires your attention</h3>
+                        <p>“Example comment here which lorem ipsum dolor sit amet...”</p>
+                      </div>
+                  </a>
+                </li>
+                <!-- Single Notification -->
+                <li>
+                  <a href="#" class="notification__list comment_mention">
+                    <div class="notification__list--icon"><span><i class="fal fa-comment-dots"></i></span></div>
+                    <div class="notification__list--desc">
+                      <h3> Andrew mentioned you in a comment:</h3>
+                      <p>“Example comment here which lorem ipsum dolor sit amet...”</p>
+                    </div>
+                  </a>
+                </li>
+                <!-- Single Notification -->
+                <li>
+                  <a href="#" class="notification__list quote_accepted">
+                    <div class="notification__list--icon"><span><i class="fal fa-check"></i></span></div>
+                    <div class="notification__list--desc">
+                      <h3>Andrew Ltd. Accepted your Quote</h3>
+                      <p>“Example comment here which lorem ipsum dolor sit amet...”</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+               
+            </div>
+          </div>
+        </li>
+        <li><a href="#"><i class="fal fa-user"></i></a></li>
+        
+      </ul>
+    </div>
+  </div>
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Left Sidebar -->
+    <div class="left__sidebar ">
+      <!-- Left Sidebar Header -->
+      <div class="left_sidebar--head">
+        <button class="btn btn-add-quote btn-primary"> <i class="fal fa-plus"></i>  <span class="link-label">New Quote</span> </button>
+      </div> 
+      <!-- Left Sidebar Navigation -->
+      <div class="left__sidebar--navigation">
+        <ul>
+          <li class="has_dropdown">
+            <a href="#"> <span class="link-icon"><img src="images/home.png" alt=""></span>  <span class="link-label"> Home <i class="fal fa-angle-down"></i> </span> </a>
+            <div class="navigation__dropdown">
+              <ul>
+                <li><a href="#">Quotes</a></li>
+                <li><a href="#">Active</a></li>
+                <li><a href="#">Expired</a></li>
+                <li><a href="#">Created</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="has_dropdown">
+            <a href="#"> <span class="link-icon"><img src="images/shipment.png" alt=""></span>  <span class="link-label"> Shipments <span class="active_shipment">123</span> <i class="fal fa-angle-down"></i> </span> </a>
+            <div class="navigation__dropdown">
+              <ul>
+                <li><a href="#">All Active</a></li>
+                <li><a href="#">Exceptions</a></li>
+                <li><a href="#">Completed</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="has_dropdown active_item">
+            <a href="#"> <span class="link-icon"><img src="images/active-menu/Directory.png" alt=""></span>  <span class="link-label"> Directory <i class="fal fa-angle-down"></i> </span> </a>
+            <div class="navigation__dropdown">
+              <ul>
+                <li><a href="#">Suppliers</a></li>
+                <li><a href="#">Buyers</a></li>
+                <li><a href="#">Forwarders</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#"> <span class="link-icon"><img src="images/Product-Catalogue.png" alt=""></span>  <span class="link-label"> Product Catalogue  </span> </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Left Sidebar Footer Navigation -->
+      <div class="left__sidebar__footer--navigation">
+        <ul>
+          <li><a href="#"> <i class="fal fa-exclamation-circle"></i> <span class="link-label">Help</span> </a></li>
+          <li><a href="#"> <i class="fal fa-cog"></i> <span class="link-label">Organization Hub</span> </a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Main Content Inner -->
+    <div class="main__content__inner">
+      <!-- white Box.. Common Component -->
+      <div class="white_box">
+        <!-- Table Header -->
+        <div class="table_box__head">
+          <div class="table_box--title">
+            <span><i class="far fa-address-book"></i></span>
+            <h3> Suppliers Directory</h3>
+          </div>
+          <div class="table_box__header--right">
+            <div class="table_search">
+              <form class="form-inline">
+                <input type="search" class="form-control" placeholder="Search Suppliers...">
+                <button class="btn btn-search"> <i class="fal fa-search"></i> </button>
+              </form>
+            </div>
+            <div class="add_item">
+              <button data-toggle="modal" data-target="#add_supplier" class="btn add-btn  btn-primary"> <span class="mobile_icon"><i class="fal fa-plus"></i></span> <span class="btn-label">New Supplier</span> </button>
+            </div>
+          </div>
+        </div>
+        <!-- Table Box Equal_table for same size col-->
+        <div class="table_box table-responsive equal_table">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Country</th>
+                <th scope="col">Locations</th>
+                <th scope="col">Active Orders</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Crockery & Cutlery Co</td>
+                <td>China</td>
+                <td>12</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>Crockery & Cutlery Co</td>
+                <td>India</td>
+                <td>12</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>Crockery & Cutlery Co</td>
+                <td>Canada</td>
+                <td>12</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>Crockery & Cutlery Co</td>
+                <td>China</td>
+                <td>12</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>Crockery & Cutlery Co</td>
+                <td>China</td>
+                <td>12</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>Crockery & Cutlery Co</td>
+                <td>Canada</td>
+                <td>12</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>Crockery & Cutlery Co</td>
+                <td>China</td>
+                <td>12</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>Crockery & Cutlery Co</td>
+                <td>Canada</td>
+                <td>12</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>Crockery & Cutlery Co</td>
+                <td>China</td>
+                <td>12</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>Crockery & Cutlery Co</td>
+                <td>China</td>
+                <td>12</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>Crockery & Cutlery Co</td>
+                <td>Canada</td>
+                <td>12</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>Crockery & Cutlery Co</td>
+                <td>China</td>
+                <td>12</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>Crockery & Cutlery Co</td>
+                <td>Canada</td>
+                <td>12</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>Crockery & Cutlery Co</td>
+                <td>China</td>
+                <td>12</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>Crockery & Cutlery Co</td>
+                <td>China</td>
+                <td>12</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>Crockery & Cutlery Co</td>
+                <td>Canada</td>
+                <td>12</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>Crockery & Cutlery Co</td>
+                <td>China</td>
+                <td>12</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>Crockery & Cutlery Co</td>
+                <td>Canada</td>
+                <td>12</td>
+                <td>13</td>
+              </tr>
+             
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- add_supplier Modal -->
+<div class="modal fade" id="add_supplier">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">New Supplier</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><i class="fal fa-times"></i></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="add_item_box">
+          <input type="text" placeholder="Supplier Name..." class="form-control">
+          <button class="btn add-btn btn-primary">Create Supplier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

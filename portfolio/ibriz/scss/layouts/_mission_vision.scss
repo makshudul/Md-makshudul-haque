@@ -1,0 +1,48 @@
+.mission_vision{
+    padding: 100px 0;
+    .v_m_card__img{
+        img{
+            width: 100%;
+        }
+    }
+    .col-md-6{
+        margin-bottom: 80px;
+    }
+
+    .v_m_card{
+        padding-top: 100px;
+
+        h3{
+            font-size: 32px;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #171448;
+        }
+        h5{
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+        }
+        p{
+            color: #333333;
+        }
+    }
+}
+
+@media all and (max-width:991px){
+    .mission_vision{
+        padding: 100px 0;
+        
+        .col-md-6{
+            margin-bottom: 30px;
+        }
+    
+        .v_m_card{
+            padding-top: 30px;
+    
+            
+        }
+    }
+}

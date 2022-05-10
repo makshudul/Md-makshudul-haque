@@ -1,0 +1,129 @@
+// import fonts
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('../fonts/AvenirLTStd-Book.woff2') format('woff2'),
+      url('../fonts/AvenirLTStd-Book.woff') format('woff'),
+      url('../fonts/AvenirLTStd-Book.svg#AvenirLTStd-Book') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('../fonts/AvenirLTStd-Medium.woff2') format('woff2'),
+      url('../fonts/AvenirLTStd-Medium.woff') format('woff'),
+      url('../fonts/AvenirLTStd-Medium.svg#AvenirLTStd-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Regular';
+  src: url('../fonts/Avenir-Regular.woff2') format('woff2'),
+      url('../fonts/Avenir-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+// Base style
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+a:focus,
+a:hover{
+  text-decoration: none;
+  outline: none;
+}
+
+ul,ol{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+p,h1,h2,h3,h4,h5,h6{
+  margin-bottom: 15px;
+}
+h1{
+  font-size: 60px;
+  line-height: 62px;
+}
+h3{
+  font-size: 34px;
+  line-height: 42px;
+}
+body{
+  font-family: $font-stack-pri;
+  font-size: 18px;
+  line-height: 28px;
+  color: $gray;
+}
+.space-100{
+  padding: 80px 0;
+}
+.bg-gray-light{
+  background-color: $gray-thin;
+}
+.section-head{
+  max-width: 700px;
+  margin: auto;
+  h3{
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    font-family: $font-stack-sen;
+    font-weight: bold;
+  }
+  p{
+    font-size: 18px;
+    line-height: 32px;
+    font-family: $font-stack-pri;
+      font-weight: 400;
+  }
+}
+
+.section-head.text-dark{
+  h3{
+    color: $black;
+  }
+  p{
+    color: $gray;
+  }
+}
+.section-head.text-light{
+  h3{
+    color: $white;
+  }
+  p{
+    color: $white;
+  }
+}
+@media all and (max-width:991px){
+  body{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .space-100{
+    padding: 50px 0;
+  }
+  .section-head{
+    max-width: 80%;
+    h3{
+      font-size: 30px;
+      line-height: 42px;
+      margin-bottom: 10px;
+      
+    }
+    p{
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

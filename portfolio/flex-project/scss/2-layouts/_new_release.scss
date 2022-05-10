@@ -1,0 +1,155 @@
+.new_release-section{
+    padding-bottom: 160px;
+
+    .flex_center{
+        justify-content: center;
+        .new_release__card{
+            width: 60%;
+        }
+    }
+    .new_release__card{
+        width: 48%;
+
+        .new_release__card__head{
+            margin-bottom: 50px;
+            h3{
+                font-size: 30px;
+                line-height: 40px;
+                font-weight: $txt-400;
+            }
+        }
+        .new_release__card__list{
+            border-width: 1px 0 1px 0;
+            border-style: solid;
+            border-color: $gray-600;
+            padding: 30px;
+            ul{
+                li{
+                    display: block;
+                    a{
+                        display: flex;
+                        color: $black-400;
+                        align-items: center;
+                        margin-bottom: 25px;
+                        .news_date{
+                            white-space: nowrap;
+                        }
+                        .line_black{
+                            width: 30px;
+                            display: inline-block;
+                            height: 1px;
+                            background-color: $black-400;
+                            margin-left: 20px;
+                        }
+                        .news_topic{
+                            font-family: $f-noto_serif_myanmar_regular;
+                        }
+                    }
+                }
+            }
+        }
+        .new_release__card__btn{
+            margin-top: 70px;
+            text-align: center;
+            .btn{
+                width: 360px;
+                height: 80px;
+                border: 1px solid $black-400;
+                display: inline-flex;
+                justify-content: space-between;
+                span{
+                    padding-top: 5px;
+                }
+                &:hover{
+                    background-color: $black-400;
+                    color: $white-400;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media all and (min-width:1024px) and (max-width:1440px) {
+    
+    .new_release-section{
+        .new_release__card{
+            .new_release__card__list{
+                padding: 30px 20px;
+                ul{
+                    li{
+                        a{
+                           font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}
+
+@media all and (max-width:991px) {
+   
+    .new_release-section{
+        padding-bottom: 100px;
+        .flex_center{
+            justify-content: center;
+            .new_release__card{
+                width: 100%;
+            }
+        }
+        .new_release__card{
+            width: 100%;
+            margin-bottom: 60px;
+            .new_release__card__head{
+                margin-bottom: 30px;
+                h3{
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+            .new_release__card__list{
+                padding: 15px 0;
+                
+                ul{
+                    li{
+
+                        a{
+                            margin-bottom: 25px;
+                            align-items: flex-start;
+                            font-size: 12px;
+
+                            .news_date{
+                                white-space: nowrap;
+                            }
+                            .line_black{
+                                width: 30px;
+                                display: inline-block;
+                                height: 1px;
+                                background-color: $black-400;
+                                margin-left: 20px;
+                                margin-top: 10px;
+                            }
+                            .news_topic{
+                                font-family: $f-noto_serif_myanmar_regular;
+                            }
+                        }
+                    }
+                }
+            }
+            .new_release__card__btn{
+                margin-top: 30px;
+                text-align: center;
+                .btn{
+                    width: 70%;
+                }
+            }
+        }
+    }
+    
+
+}

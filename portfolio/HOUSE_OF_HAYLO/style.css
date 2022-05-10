@@ -1,0 +1,410 @@
+
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Your template name
+    Template URI:
+    Description: This is html5 template
+    Author:
+    Author
+    Version: 1.0
+
+-----------------------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+a:focus {
+  outline:0px solid;
+  text-decoration:none;
+}
+a {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  text-decoration:none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0 none;
+}
+img {
+  max-width:100%;
+  height:auto
+}
+p {
+  margin:0 0 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+}
+h1 {
+  font-size: 22px;
+}
+@media (min-width:576px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+@media (min-width:768px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+@media (min-width:992px) {
+  h1 {
+    font-size: 34px;
+  }
+}
+ul{
+  list-style: outside none none;
+  margin: 0;
+  padding: 0
+}
+body {
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000;
+  background-color: #fff;
+  background-image: url('images/bg.png');
+  background-repeat: repeat;
+}
+.hero_area{
+    background-image: url('images/hero-bg.jpg');
+    background-repeat: no-repeat;
+
+    padding-bottom: 100px;
+}
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+    padding: 20px 0;
+}
+.navbar-nav {
+	float: left;
+	margin: 22px 0 0 90px;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #000;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: 'Lora', serif;
+    padding: 6px 15px;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+	color: #000;
+	background-color: #e781b0;
+}
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+	color: #000;
+	background-color: #e781b0;
+}
+/* hero_text */
+.hero_text{
+    background-color: #fff;
+    padding: 75px 50px 60px 30px;
+    margin-top: 180px;
+    margin-left: 80px;
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2)
+}
+.hero_text h3{
+    font-size: 35px;
+    font-style: italic;
+}
+.hero_text h1{
+    font-size: 52px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 65px
+
+}
+.hero_text span.black_line{
+    width: 60px;
+    height: 3px;
+    background-color: #000;
+    display: block;
+    margin-bottom: 30px;
+
+}
+.hero_text p{
+    color: #454545;
+}
+.hero_text a{
+    background-color: #e781b0;
+    color: #000;
+    padding:6px 15px;
+    margin-top:45px;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    display: inline-block;
+}
+.header_social_icons{
+    padding-top: 50px;
+    text-align: right;
+}
+.header_social_icons li {
+    display: inline-block;
+}
+.header_social_icons li a i{
+    font-size: 18px;
+    color: #000;
+    padding: 6px 5px;
+    text-align: center;
+}
+.header_social_icons li a i:hover{
+    color: #e781b0;
+}
+
+
+/* who_we_are */
+.who_we_are{
+    padding: 120px 0 60px 0;
+}
+.who__text_l{
+    background-color: #e887b4;
+    width: 86%;
+    height: 330px;
+    text-align: center;
+    padding-top: 140px;
+    position: relative;
+    margin-left: 14%;
+}
+.who__text_l::after{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid #454545;
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 9;
+}
+.who__text_l h3{
+    font-size: 46px;
+    font-style: italic;
+    line-height: 30px;
+    position: relative;
+    z-index: 999;
+}
+.who__text_l p{
+    font-size: 13px;
+    color: #454545;
+    position: relative;
+    z-index: 999;
+}
+.who_text{
+    padding: 100px 45px 0 50px;
+}
+.who_text h3{
+    font-size: 20px;
+    font-style: italic;
+}
+.who_text p{
+    font-size: 14px;
+    color: #454545;
+    line-height: 18px;
+}
+.hear_area{
+    padding: 60px 0;
+}
+.hear_inner{
+    background-image: url('images/hear_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 30px 50px 0;
+}
+.hear_text_l{}
+
+.hear_text_l{
+    background-color: #e887b4;
+    width: 86%;
+    height: 330px;
+    position: relative;
+    margin-left: 14%;
+    padding:80px 50px;
+}
+.hear_text_l::after{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid #454545;
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    z-index: 9;
+}
+.hear_text_l h3{
+    font-size: 46px;
+    font-style: italic;
+    line-height: 30px;
+    position: relative;
+    z-index: 999;
+    margin-bottom: 20px
+}
+.hear_text_l p{
+    font-size: 13px;
+    color: #454545;
+    position: relative;
+    z-index: 999;
+}
+.hear_text_l a{
+    font-size: 15px;
+    font-style: italic;
+    line-height: 30px;
+    position: relative;
+    z-index: 999;
+    color: #000;
+}
+
+.shop_area{
+    padding: 60px 0;
+}
+.shop_title h1{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+.sinlge_shop{
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+}
+.shop_img{
+    text-align: center;
+    padding:40px 30px;
+}
+.shop_text{
+    padding: 20px 10px;
+}
+.shop_text h3{
+    color: #838383;
+    font-size: 20px;
+}
+.shop_text p{
+    color: #838383;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.sinlge_shop_hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(232, 135, 180, 0.6);
+    opacity: 0;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+.sinlge_shop:hover .sinlge_shop_hover{
+    opacity: 1;
+}
+.sinlge_shop_hover a{
+    width: 94%;
+    height: 94%;
+    border: 2px solid #454545;
+    display: block;
+    margin: 3% 0 0 3%;
+    padding-top: 150px;
+    color: #000;
+    font-size: 16px;
+    font-style: italic;
+
+}
+.sinlge_shop{
+    margin-bottom: 30px;
+}
+/* contact_us */
+
+.contact_us{
+    padding: 60px 0;
+    background-color: #fff;
+}
+.contact_us_title{
+    max-width: 60%;
+    margin: auto;
+    text-align: center;
+}
+.contact_us_title h1{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 0;
+}
+.contact_us_title p{
+    text-align: center;
+    color: #454545
+}
+.contact_us_title a{
+    text-align: center;
+    color: #000;
+    padding:  0 20px;
+    margin: 30px 0;
+    display: inline-block;
+}
+.contact_us_title a i{
+    text-align: center;
+    color: #f8d1e3;
+    padding:  0 5px;
+
+}
+.sinlge_form input[type=text]{
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    border: none;
+
+}
+.sinlge_form textarea{
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 30px;
+
+}
+.sinlge_form input[type=submit]{
+
+    background-color: #e781b0;
+    padding: 10px 30px;
+    border: none;
+    margin-top: 30px;
+    display: inline-block;
+    color: #000;
+
+}
+.footer_area{
+    padding: 15px 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+.footer_area p{
+    margin-bottom: 0;
+    color: #808080;
+
+}

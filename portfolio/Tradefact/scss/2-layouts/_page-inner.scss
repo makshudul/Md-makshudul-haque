@@ -1,0 +1,14 @@
+.page__inner--box {
+    h3{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $black;
+    margin-bottom: 20px;
+}
+}
+@media all and (max-width:991px){
+    .page__inner--box {
+        margin-top: 50px;
+    }
+}

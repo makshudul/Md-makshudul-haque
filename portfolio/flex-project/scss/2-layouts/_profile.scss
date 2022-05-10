@@ -1,0 +1,104 @@
+.profile-section{
+    padding:0 0 180px 0;
+    &.padding_extra{
+        padding-top: 180px;
+    }
+
+    .conpany__profile__inner{
+        max-width: 80%;
+        margin: auto;
+        .company__profile__card{
+            display: flex;
+            align-items: flex-start;
+            border-bottom: 1px solid #000;
+            padding: 40px 0;
+            span{
+                font-size: 16px;
+                line-height: 40px;
+                font-family: $f-noto_serif_myanmar_regular;
+                display: block;
+            }
+            .company__profile__name{
+                span{
+                    width: 140px;
+                }
+            }
+            &--sm{
+                .company__profile__name{
+                    span{
+                        font-weight: $txt-700;
+                    }
+                }
+            }
+        }
+    }
+}
+.simmple-section{
+    padding-bottom: 170px;
+    .flex-row{
+        align-items: center;
+    }
+    .simple__card{
+        width: 48%;
+        h3{
+            font-size: 20px;
+            line-height: 80px;
+            font-weight: $txt-300;
+        }
+    }
+}
+@media all and (min-width:1024px) and (max-width:1440px) {
+    .profile-section{
+        .conpany__profile__inner{
+            max-width: 980%;
+            margin: auto;
+            
+        }
+    }
+    .simmple-section{
+        
+        .simple__card{
+            h3{
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media all and (max-width:991px) {
+    .profile-section{
+        padding:0 0 180px 0;
+    
+        .conpany__profile__inner{
+            max-width: 100%;
+            .company__profile__card{
+                display: flex;
+                align-items: flex-start;
+                border-bottom: 1px solid #000;
+                padding: 20px 0;
+                span{
+                    font-size: 12px;
+                    line-height: 32px;
+                }
+                .company__profile__name{
+                    span{
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+
+    .simmple-section{
+        padding-bottom: 100px;
+        .simple__card{
+            width: 100%;
+            h3{
+                font-size: 12px;
+                line-height: 32px;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

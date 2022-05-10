@@ -1,0 +1,211 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Your template name
+    Template URI:
+    Description: This is html5 template
+    Author:
+    Author
+    Version: 1.0
+
+-----------------------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+a:focus {
+  outline:0px solid;
+  text-decoration:none;
+}
+a {
+  transition: all 0.3s ease 0s;
+  text-decoration:none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0 none;
+}
+img {
+  max-width:100%;
+  height:auto
+}
+p {
+  margin:0 0 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+}
+h1 {
+  font-size: 22px;
+}
+@media (min-width:576px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+@media (min-width:768px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+@media (min-width:992px) {
+  h1 {
+    font-size: 34px;
+  }
+}
+ul{
+  list-style: outside none none;
+  margin: 0;
+  padding: 0
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #222;
+  background-color: #fff;
+}
+.header_area{
+    padding: 20px 0;
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.5);
+}
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+}
+.header_inner a{
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 10px;
+    display: block;
+}
+.hero_area{
+    background-image: url('images/bg.jpg');
+    padding: 100px 0;
+    height: 700px;
+    background-size: cover;
+}
+.hero_inner h3{
+    font-size: 90px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 80px;
+    margin-bottom: 30px;
+}
+.hero_inner p{
+    font-size: 18px;
+    color: #fff;
+}
+.form_area{
+    background-color: #fff;
+    padding:50px 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.form_header h3{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #02569d;
+}
+.form_header span{
+    width:100%;
+    height: 1px;
+    background-color: #02569d;
+    display: block;
+}
+.form_box{
+    padding: 30px 0;
+}
+
+.form_box input[type=text]{
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f1f1f1;
+}
+.form_box input[type=email]{
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f1f1f1;
+}
+.form_box input[type=submit]{
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #1377cc;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-top: 30px;
+}
+
+.real_estate_area{
+    padding: 80px 0;
+}
+.real_estate_inner{
+    text-align: center;
+}
+.real_estate_inner h3{
+    font-size: 48px;
+    font-weight: 600;
+}
+.real_estate_inner p{
+    font-size: 16px;
+    margin-bottom: 70px;
+}
+.single_c{
+    position: relative;
+}
+.single_c p{
+    position: absolute;
+    top: 15px;
+    right: 0;
+    background-color: #02569d;
+    color: #fff;
+    padding: 5px 15px;
+}
+.single_c img{
+    width: 100%;
+}
+.single_c h3{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.single_c h4{
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+.footer_contact{
+    text-align: center;
+    margin-top: 100px;
+}
+.footer_contact a{
+    background-color: #1377cc;
+    font-size: 28px;
+    color: #fff;
+    padding: 15px 50px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.footer_contact a:hover{
+    background-color: #02569d;
+}

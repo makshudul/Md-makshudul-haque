@@ -1,0 +1,45 @@
+$font-family: 'Rubik', sans-serif;
+$font-size: 15px;
+$line-height:24px;
+$font-light:300;
+$font-normal:400;
+$font-medium:500;
+$font-bold:700;
+$letter-space: 0.5px;
+
+
+// colors
+$yellow: #FFBD59;
+$black:#000000;
+$black-light:#414141;
+$black-light-2:#242323;
+$gray:#ccc;
+$white-light: #f2f2f2;
+$green:#0DC143;
+// Custom Color
+$text-color: $black-light;
+$boder-color: rgba(65, 65, 65, 0.5);
+
+
+$primary:$yellow;
+
+// Spacer
+$spacer: 1.8rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3)
+  ),
+  $spacers
+);
+
+
+// Border Radius
+$border-radius:               4px !default;
+$border-radius-lg:           4px !default;
+$border-radius-sm:           6px !default;

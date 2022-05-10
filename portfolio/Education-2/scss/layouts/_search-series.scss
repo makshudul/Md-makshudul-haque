@@ -1,0 +1,72 @@
+.search-series{
+    .search__series__cover{
+        height: 380px;
+        margin-bottom: 25px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    // search__series__area
+    .search__series__area{
+        .search__series__head{
+            h3{
+                font-size: 35px;
+                font-weight: $font-bold;
+            }
+        }
+        .search__series__input{
+            .form-control{
+                height: 45px;
+                border: none;
+                font-size: 18px;
+                @include box-shadow(0,3px,6px,rgba(0,0,0,0.16));
+                &::placeholder{
+                    color: $text-color;
+                }
+                &::-moz-placeholder{
+                    color: $text-color;
+                }
+                &::-webkit-placeholder{
+                    color: $text-color;
+                }
+            }
+            .custom-select{
+                height: 45px;
+                border: none;
+                font-size: 18px;
+                color: $text-color;
+                background: #fff url("../images/arrow-down.png") no-repeat left .85rem center/12px 7px;
+                @include box-shadow(0,3px,6px,rgba(0,0,0,0.16));
+            }
+            .btn{
+                height: 46px;
+                border: none;
+                @include box-shadow(0,3px,6px,rgba(0,0,0,0.16));
+                i{
+                    margin-right: 10px;
+                }
+            }
+            
+        }
+    }
+}
+
+@media all and (max-width:991px){
+    .search-series{
+        .search__series__cover{
+            height: 150px;
+            margin-bottom: 10px;
+        }
+        // search__series__area
+        .search__series__area{
+            .search__series__head{
+                h3{
+                    font-size: 20px;
+                }
+            }
+            
+        }
+    }
+}

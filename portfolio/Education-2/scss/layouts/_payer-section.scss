@@ -1,0 +1,16 @@
+.payer-section{
+    position: relative;
+    &.padding__extra_b{
+        padding-bottom: 100px !important;
+    }
+}
+
+@media all and (max-width:991px){
+    .payer-section{
+        position: relative;
+        &.padding__extra_b{
+            padding-bottom: 0px !important;
+            padding-top: 0 !important;
+        }
+    }
+}

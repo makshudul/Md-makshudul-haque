@@ -1,0 +1,114 @@
+// hero-bottom__head
+.update-process__head{
+    .update-process__head__title{
+        font-size: 24px;
+        line-height: 38px;
+        font-weight: 500;
+        color: $dark;
+    }
+}
+
+// update-process
+.update-process{
+    overflow: hidden;
+    position: relative;
+    .process__shape__left{
+        position: absolute;
+        left: -110px;
+        top: -20px;
+        display: block;
+        width: 200px;
+        img{
+            width: 100%;
+        }
+    }
+    .process__shape__right{
+        position: absolute;
+        right: -95px;
+        bottom: -10px;
+        display: block;
+        width: 200px;
+        img{
+            width: 100%;
+        }
+    }
+    .update-process__image{
+        position: absolute;
+        left: 3%;
+        bottom: 25%;
+        width: 33%;
+        img{
+            width: 100%;
+        }
+    }
+
+    .update-process__items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .update-process__item{
+            width: 33%;
+            height: 170px;
+
+            .update-process__item__icon{
+                height: 90px;
+            }
+            .update-process__item__desc{
+                p{
+                    color: $dark;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            
+            }
+        }
+        
+    }
+}
+
+@media all and (max-width:991px){
+    // hero-bottom__head
+.update-process__head{
+    .update-process__head__title{
+        font-size:18px;
+        line-height: 32px;
+    }
+}
+
+// update-process
+.update-process{
+    .process__shape__left{
+        left: -140px;
+    }
+    .process__shape__right{
+        position: absolute;
+        right: -95px;
+        bottom: -10px;
+        display: block;
+        width: 200px;
+        img{
+            width: 100%;
+        }
+    }
+    .update-process__image{
+        display: none;
+    }
+
+    .update-process__items{
+        .update-process__item{
+            width: 100%;
+            text-align:center;
+            
+        }
+        
+    }
+}
+}
+
+@media all and (min-width:1440px){
+    .update-process {
+        .update-process__image {
+            bottom: 12%;
+        }
+    }
+}

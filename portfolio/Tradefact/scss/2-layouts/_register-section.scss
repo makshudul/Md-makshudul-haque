@@ -1,0 +1,372 @@
+.register-section{
+    padding: 100px 0;
+    // Left Progress Bar
+    .border-right{
+        border-width: 0 1px 0 0;
+        border-style: solid;
+        border-color: $gray;
+    }
+    .register__progress{
+        ul{
+            li{
+                display: block;
+                margin: 0 0 55px 0;
+                position: relative;
+                &:after{
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: 55px;
+                    background-color: #AFAFAF;
+                    left: 16px;
+                    top: -55px;
+                }
+                &:first-child{
+                    &::after{
+                        display: none;
+                    }
+                }
+                a{
+                    display: flex;
+                    color: $gray;
+                    flex-wrap: wrap;
+                    font-weight: 500;
+
+                    .list__number{
+                        width: 32px;
+                        height: 32px;
+                        border: 1px solid #AFAFAF;
+                        border-radius: 20px;
+                        text-align: center;
+                        margin-right: 35px;
+                        color: #AFAFAF;
+                    }
+                    small{
+                        display: block;
+                        color: #AFAFAF;
+                    }
+                    
+                }
+            }
+            li.active{
+                &:after{
+                    background-color: $blue;
+                }
+
+                a{
+                    color: $blue;
+                    .list__number{
+                        background-color: $blue;
+                        color: $white;
+                        border-color: $blue;
+                    }
+                }
+            }
+        }
+    }
+
+    .register__inner{
+        padding-left: 40px;
+        .register__header{
+            span{
+                display: block;
+                text-transform: uppercase;
+                font-size: 15px;
+                font-weight: 500;
+                margin-bottom: 15px;
+            }
+            h3{
+                font-size: 32px;
+                font-weight: 500;
+                color: $black;
+            }
+            p{
+                font-size: 20px;
+                font-weight: 500;
+                color: $black;
+                margin-bottom: 40px;
+            }
+        }
+
+        // register__card
+        .register__card{
+            margin-bottom: 25px;
+            position: relative;
+            label{
+                font-size: 16px;
+                line-height: 20px;
+                display: block;
+                margin-bottom: 10px;
+                span{
+                    display: block;
+                    font-size: 15px;
+
+                }
+            }
+            small{
+                line-height: 16px;
+                display: block;
+                margin: -5px 0 10px 0;
+            }
+            .input-error{
+                p{
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $red;
+                    margin: 10px 0;
+                }
+            }
+            .input-error.position-right{
+                position: absolute;
+                top: -3px;
+                right: -50%;
+            }
+            .url-checking{
+                position: absolute;
+                right: -70%;
+                top: 50px;
+                display: inline-block;
+                p{
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $black;
+                    span{
+                        color: $blue;
+                    }
+                    i{
+                        color: $green;
+                        font-size: 24px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .help-link{
+                position: absolute;
+                right: -50px;
+                top: 34px;
+                a{
+                    font-size: 16px;
+                    color: $blue;
+                }
+            }
+            .btn-groups {
+                display: flex;
+                flex-wrap: wrap;
+                .btn-text-blue{
+                    font-size: 16px;
+                    color: $gray;
+                    padding: 4px 12px;
+                    height: auto;
+                    border: 1px solid $border;
+                    margin: 0 5px 5px 0;
+                    border-radius: 3px;
+                    font-weight: 500;
+                    width: auto;
+                    text-transform: capitalize;
+                    &:hover{
+                        color: $blue;
+                    }
+                }
+                .btn-text-blue.selected{
+                    color: $blue;
+                    border-color: $blue;
+                    background-color: rgba(74, 115, 232, 0.08);
+                }
+                .btn.focus, 
+                .btn:focus {
+                    outline: 0;
+                    box-shadow:none;
+                }
+
+                .btn-fill{
+                    font-size: 16px;
+                    color: $gray;
+                    padding: 4px 12px;
+                    background-color: #F1F1F1;
+                    height: auto;
+                    font-weight: 500;
+                    border: 1px solid $border;
+                    margin: 0 5px 5px 0;
+                    border-radius: 3px;
+                    width: auto;
+                    text-transform: capitalize;
+                    position: relative;
+                    &:hover{
+                        color: $blue;
+                    }
+
+                    
+                }
+            }
+
+            .btn-submit{
+                background-color: $blue;
+                color: $white;
+                border-radius: 5px;
+                font-size: 18px;
+                font-weight: 500;
+                width: auto;
+                height: auto;
+                padding: 6px 70px;
+                margin-top: 40px;
+            }
+            .form-control:focus {
+                border-color: $blue;
+                outline: 0;
+                box-shadow: none;
+            }
+            .later-btn{
+                display: block;
+                text-align: center;
+                color: #B5B5B5;
+                font-size: 20px;
+                font-weight: 500;
+                margin-top: 20px;
+                margin-left: -40px;
+            }
+        }
+
+        a.add__more{
+            font-size: 20px;
+            font-weight: 500;
+            color: $blue;
+            display: block;
+            margin: 10px 0;
+        }
+
+        // upload-file-showcase
+        .upload-file-showcase{
+            display: flex;
+            align-items: center;
+            .upload__preview{
+                width: 190px;
+                height: 120px;
+                border: 1px dashed rgba(112, 112, 112, 0.75);
+                text-align: center;
+                padding: 20px;
+                img{
+                    width: 100%;
+                }
+            }
+            .upload__info{
+                display: flex;
+                align-items: center;
+                padding-left: 20px;
+                a{
+                    display: block;
+                    padding: 10px;
+                    font-size: 24px;
+                    
+                }
+                .right{
+                    color: $green;
+                }
+                .close{
+                    color: $red;
+                }
+            }
+        }
+        .other-btn-box{
+            position: relative;
+            display: inline-block;
+        }
+        // add__others
+        
+        .add__others{
+            display: flex;
+            align-items: flex-start;
+        }
+        .add__more__box{
+            white-space: nowrap;
+            display: none;
+        }
+        .add__more__box.show{
+            display: block;
+        }
+            .single__input--item{
+                margin-right: 5px;
+                margin-bottom: 10px;
+                position: relative;
+                width: 150px;
+                .form-control{
+                    height: 35px;
+                }
+                .input-error{
+                    p{
+                        font-size: 12px;
+                        margin: 0;
+                        white-space: nowrap;
+                    }
+                }
+                span.close_icon{
+                    position: absolute;
+                    right: 7px;
+                    top: 6px;
+                    font-size: 16px;
+                    color:$red;
+                    cursor: pointer;
+                }
+                span.add_icon{
+                    position: absolute;
+                    left: 7px;
+                    top: 6px;
+                    font-size: 14px;
+                    color:$gray;
+                    cursor: pointer;
+                }
+                .add__filed{
+                    padding-left: 25px;
+                }
+            }
+            
+            .btn-add-text{
+                font-size: 16px;
+                color: $blue;
+                background-color: rgba(74, 115, 232, 0.08);
+                padding: 4px 12px;
+                height: 35px;
+                font-weight: 500;
+                border: 1px solid $blue;
+                margin: 0 5px 5px 0;
+                border-radius: 3px;
+                width: 90px;
+                text-transform: capitalize;
+                &:hover{
+                    color: $blue;
+                }
+            }
+
+            
+            
+        
+    }
+}
+
+
+@media all and (max-width:991px){
+    
+    .register-section .register__progress{
+        display: none;
+    }
+    .register-section {
+        padding: 60px 0;
+    }
+    .register-section .register__inner {
+        padding-left: 0;
+    }
+    .register-section .register__inner .register__card .input-error.position-right {
+        position: static;
+    }
+    .register-section .register__inner .register__card .url-checking {
+        position: static;
+    }
+    .register-section .register__inner .register__card .help-link {
+        position: static;
+    }
+    .header-section .head-section__top.mobile-show {
+        display: block !important;
+    }
+    .register-section .border-right {
+        border: none;
+    }
+}

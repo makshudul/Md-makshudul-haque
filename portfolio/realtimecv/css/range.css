@@ -1,0 +1,104 @@
+.slider-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 8px;
+  background-color: #ECECEC;
+  margin-top: 10px;
+}
+
+input[type='range'] {
+  position: relative;
+  z-index: 1000;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  height: 8px;
+  border-radius: 0px;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  top: -10px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  position: relative;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 22px;
+  background: url("../images/template/range-active.svg");
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 5000;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.range-mute input[type='range']::-webkit-slider-thumb {
+  background: url("../images/template/range-mute.svg");
+}
+
+
+.range-mute input[type='range']::-webkit-slider-thumb:hover,
+.range-mute input[type='range']::-webkit-slider-thumb:active {
+  background: url("../images/template/range-mute.svg");
+}
+
+input[type='range']::-webkit-slider-thumb:hover,
+input[type='range']::-webkit-slider-thumb:active {
+  background: url("../images/template/range-active.svg");
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.range-mute input[type='range']::-webkit-slider-thumb:hover,
+.range-mute input[type='range']::-webkit-slider-thumb:active {
+  background: url("../images/template/range-mute.svg");
+}
+input[type='range']::-moz-range-track {
+  background: transparent;
+}
+
+input[type='range']::-moz-range-thumb {
+  position: relative;
+  -moz-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 22px;
+  background: url("../images/template/range-active.svg");
+  border-radius: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 5000;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.range-mute input[type='range']::-moz-range-thumb{
+  background: url("../images/template/range-mute.svg");
+}
+input[type='range']::-moz-range-thumb:hover,
+input[type='range']::-moz-range-thumb:active {
+  background: url("../images/template/range-active.svg");
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.range-mute input[type='range']::-moz-range-thumb:hover,
+.range-mute input[type='range']::-moz-range-thumb:active {
+  background: url("../images/template/range-mute.svg");
+}
+
+
+.fill {
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  height: 8px;
+  width: 0%;
+  border-radius: 0;
+  background: #34C25E;
+}
+
+.range-mute .fill {
+  background: #CACACA;
+}

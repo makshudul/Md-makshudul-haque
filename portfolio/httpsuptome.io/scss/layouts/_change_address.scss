@@ -1,0 +1,348 @@
+.change_address__head{
+    margin-top: -80px;
+    .change_address__title{
+        h3{
+            font-size: 35px;
+            font-weight: 600;
+            color: $primary;
+        }
+    }
+    
+    // change_address__steps
+    .change_address__steps{
+        margin-top: 50px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        &::after{
+            content: '';
+            width: 80%;
+            height: 4px;
+            background-color: $light-gray;
+            display: block;
+            position: absolute;
+            left: 10%;
+            top: 20px;
+            z-index: -1;
+        }
+
+        .change_address__step{
+            width: 20%;
+
+            span{
+                width: 40px;
+                height: 40px;
+                border-radius: 40px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+                border: 1px solid $info;
+                color: $info;
+                background-color: $thin-green;
+                font-weight: 400;
+                position: relative;
+                z-index: 999;
+            }
+
+            &--active{
+                margin-top: -2px;
+                position: relative;
+                &::after{
+                    content: '';
+                    width: 100%;
+                    height: 4px;
+                    display: block;
+                    background-color: $info;
+                    position: absolute;
+                    left: -50%;
+                    top: 22px;
+                    z-index: 1;
+                }
+                &:first-child{
+                    &::after{
+                        display: none;
+                    }
+                }
+                span{
+                    width: 50px;
+                    height: 50px;
+                    border: 2px solid $white;
+                    background-color: $info;
+                    color: $white;
+                    font-size: 20px;
+                    font-weight: 600;
+                    @include box-shadow(0,5px,10px,rgba(0,0,0,0.16));
+                }
+
+                p{
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: $info;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+// change_address__content
+.change_address__content{
+    margin-top: 50px;
+    .change_address__content__title{
+        margin-bottom: 30px;
+        text-align: center;
+        h3{
+            font-size: 20px;
+            font-weight: 600;
+            color: $primary;
+        }
+    }
+    .change_address__content__box{
+        background-color: #fff;
+        padding: 60px 100px;
+        &.padding-sm{
+            padding:30px 20px !important;
+        }
+
+        .change_address__box__title{
+            h3{
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+
+        }
+        .change_add_box_desc{
+            p{
+                font-size: 12px;
+                line-height: 18px;
+            }
+            &.max-700{
+                p{
+                    max-width: 700px;
+                }
+            }
+        }
+
+        // consent_form
+        .consent_form{
+            background-color: $dark-white;
+            border: 1px solid $light-gray;
+            border-radius: 5px;
+            padding: 30px;
+        }
+
+
+        // change_address__box__footer
+        .change_address__box__footer{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            .btn{
+                width: 120px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:focus{
+                    outline: 0;
+                }
+            }
+           
+        }
+    }
+
+    .id_card{
+        margin-bottom: 30px;
+        border-bottom: 1px solid $light-gray;
+        padding-bottom: 30px;
+    }
+}
+
+// address__sort_head
+.address__sort_head{
+    border-bottom: 1px solid $light-gray;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+// form__searching_sorting
+.form__searching_sorting{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .form__searching_sorting__left{
+        display: flex;
+        width: 40%;
+        flex-wrap: wrap;
+        .form__searching_sorting__category{
+            width: 50%;
+            .custom-select{
+                border-radius: 4px 0 0 4px;
+            }
+        }
+        .form__searching_sorting__sortBy{
+            width: 50%;
+            .custom-select{
+                border-radius: 0 4px 4px 0;
+            }
+        }
+    }
+    .form__searching_sorting__right{
+        width: 40%;
+
+        .form-control{
+            border-right: 0;
+            border-radius:4px 0 0 4px;
+            &:focus{
+                &+.btn{
+                    border-color: $info;
+                }
+            }
+        }
+        .btn{
+            width: auto;
+            border-width: 1px 1px 1px 0;
+            border-color: $light-gray;
+            border-style: solid;
+            border-radius: 0 4px 4px 0;
+        }
+    }
+}
+
+
+// address_modal
+.address_modal{
+    text-align: center;
+    padding: 50px;
+    .address_cng_success{
+        font-size: 20px;
+        line-height: 26px;
+        color: $primary;
+        max-width: 650px;
+        margin: 30px auto;
+    }
+    .address_cng_desc{
+        font-size: 14px;
+        max-width: 500px;
+        margin: auto;
+    }
+    
+}
+.modal-footer{
+    padding:0 0  30px;
+    border: none;
+    &.text-center{
+        justify-content: center;
+    }
+    .btn{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width:991px){
+    .change_address__head{
+        margin-top: 40px;
+        .change_address__title{
+            h3{
+                font-size: 16px;
+            }
+        }
+        
+        // change_address__steps
+        .change_address__steps{
+            
+            .change_address__step{
+                span{
+                    font-size: 14px;
+                }
+    
+                &--active{
+                    
+                    span{
+                        font-size: 16px;
+                    }
+    
+                    p{
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+    }
+    
+    // change_address__content
+    .change_address__content{
+        .change_address__content__title{
+            h3{
+                font-size: 16px;
+            }
+        }
+        .change_address__content__box{
+            padding:20px;
+            .change_address__box__title{
+                h3{
+                    font-size: 14px;
+                }
+    
+            }
+            
+    
+            // consent_form
+            .consent_form{
+                padding: 20px;
+                p{
+                    font-size: 12px;
+                }
+            }
+    
+    
+            // change_address__box__footer
+            .change_address__box__footer{
+                .btn{
+                    width: 100px;
+                    height: 44px;
+                }
+               
+            }
+        }
+    
+        .id_card{
+            margin-bottom: 20px;
+        }
+    }
+    
+   
+    // form__searching_sorting
+    .form__searching_sorting{
+        .form__searching_sorting__left{
+            width: 100%;
+        }
+        .form__searching_sorting__right{
+            width: 100%;
+        }
+    }
+    
+    
+    // address_modal
+    .address_modal{
+        padding: 30px;
+        .address_cng_success{
+            font-size: 16px;
+            line-height: 24px;
+            margin: 20px auto;
+        }
+        .address_cng_desc{
+            font-size: 12px;
+            line-height: 16px;
+        }
+        
+    }
+    
+}

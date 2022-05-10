@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    scroll-behavior: smooth;
+}
+a,a:hover{
+    text-decoration: none;
+    transition: all 300ms;
+}
+
+a:focus{
+    outline: none;
+}
+ul,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #131722;
+}
+.header-section{
+    height: 100vh;
+    background-image: url('images/landing-v1-bg-new.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 23, 34, 0.5);
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 30px;
+    font-size: 14px;
+    color: #fff;
+    
+}
+.navbar-expand-lg .navbar-nav .nav-item.active .nav-link{
+    font-weight: 600;
+}
+.navbar{
+    border-bottom: 1px solid rgba(19, 23, 34, 0.1);
+    padding: 15px 0;
+}
+.hero-section{
+    padding-top: 350px;
+    position: relative;
+    z-index: 99999;
+}
+.hero-section h3{
+    font-size: 42px;
+    font-weight: 700;
+}
+.hero-section p{
+    font-size: 22px;
+    font-weight: 500;
+}
+a.btn-blue{
+    font-size: 14px;
+    background-color: #24baef;
+    padding: 12px 30px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+.westworld-section{
+    padding: 90px 0 80px 0;
+    background-image: url('images/vird-new.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.westworld__img img{
+    width: 100%;
+}
+.westworld__inner{
+    padding-right: 50px;
+}
+.westworld__inner h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: #19272e;
+}
+.westworld__inner h5{
+    font-size: 30px;
+    font-weight: 500;
+    color: #19272e;
+    margin: 20px 0;
+}
+.westworld__inner p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #19272e;
+    line-height: 28px;
+}
+a.btn-border{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    color: #19272e;
+    border: 2px solid #19272e;
+    padding: 14px 40px;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+.movie-showcase{
+    padding: 80px 0;
+    background-color: #fff;
+}
+.movie-showcase__header h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: #19272e;
+    margin-bottom: 20px;
+}
+.movie-showcase__header p{
+    font-size: 20px;
+    color: #19272e;
+    margin-bottom: 70px;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    background: #24baef;
+    width: 30px;
+}
+
+.website-plan{
+    padding: 100px 0;
+}
+.nav-tabs .nav-link {
+    border-bottom: 2px solid transparent;
+    text-align: center;
+    color: #919398;
+    font-size: 15px;
+    padding: 10px 70px;
+}
+.nav-tabs .nav-link span{
+    display: block;
+    margin-top: 20px;
+}
+.nav-tabs.nav {
+    justify-content: center;
+    border: none;
+}
+.nav-tabs .nav-item{
+    display: inline-block;
+    float:none;
+}
+.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-link.active {
+	color: #fff;
+    background-color: transparent;
+    border-color: transparent transparent #24baef transparent;
+	
+}
+.nav-tabs .nav-link:focus, 
+.nav-tabs .nav-link:hover {
+    color: #fff;
+	border-color: transparent transparent #24baef transparent;
+}
+
+.tab-content{
+    padding: 70px 0;
+}
+.tab-head{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.tab-head h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.tab-head p{
+    font-size: 20px;
+    color: #ffffff;
+}
+.single-card{
+    text-align: center;
+    padding: 0 20px;
+}
+.single-card img{
+    width: 100%;
+}
+.single-card h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.footer-section{
+    padding: 30px 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+.footer-card ul{
+    text-align: center;
+}
+.footer-card ul li{
+    display: inline-block;
+
+}
+.footer-card ul li a{
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    display: block;
+    padding: 0 15px;
+    
+}
+.footer-card p{
+    text-align: center;
+    font-size: 13px;
+    color: #4a5164;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+.footer-card ul.social-icon{
+    text-align: right;
+}
+
+@media all and (max-width:991px){
+    .navbar {
+        padding: 15px;
+    }
+    .navbar-nav{
+        background-color: #fff;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        color: #444;
+    }
+    .hero-section {
+        padding: 150px 0;
+    }
+    .header-section {
+        height: auto;
+    }
+    .hero-section p {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .westworld__inner {
+        padding-right: 0;
+    }
+    .westworld__img{
+        margin-top: 40px;
+    }
+    .movie-showcase__header p {
+        font-size: 16px;
+        line-height: 32px;
+    }
+    .footer-card{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .footer-card ul.social-icon {
+        text-align: center;
+    }
+}

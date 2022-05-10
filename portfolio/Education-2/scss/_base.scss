@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+}
+
+.btn {
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: $line-height;
+    background-color: $white;
+    color: $text-color;
+    font-weight: $font-normal;
+    direction: rtl;
+    text-align: right;
+}
+
+.position_ralative {
+    position: relative;
+}
+
+.shadow__carve {
+    height: 260px;
+    width: 36%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    border-radius: 300px 0 0 15px;
+    z-index: 1;
+}
+
+.shadow__carve__left {
+    height: 260px;
+    width: 37%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: $yellow;
+    display: block;
+    border-radius: 0 300px 15px 0;
+    z-index: 1;
+}
+
+.bg-yellow-gradiant {
+    background: #cb9307;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #cb9307 0%, #664a04 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #cb9307 0%, #664a04 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #cb9307 0%, #664a04 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cb9307', endColorstr='#664a04', GradientType=1);
+    /* IE6-9 */
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: $yellow;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: $yellow;
+}
+
+
+
+#button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+    width: 70px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    @include box-shadow(0, 3px, 6px, rgba(0, 0, 0, 0.16));
+
+    i{
+        font-size: 40px;
+        color: $text-color;
+    }
+    cursor: pointer;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+.box_shadow{
+    @include box-shadow(0,3px,6px,rgba(0,0,0,0.16));
+}
+
+@media all and (min-width:1024px) and (max-width:1440px){
+    
+.shadow__carve {
+    height: 200px;
+    width: 30%;
+}
+
+.shadow__carve__left {
+    height: 200px;
+    width: 30%;
+}
+
+
+}
+
+@media all and (max-width:991px){
+    .shadow__carve {
+        display: none;
+    }
+    
+    .shadow__carve__left {
+        display: none;
+    }
+    
+}

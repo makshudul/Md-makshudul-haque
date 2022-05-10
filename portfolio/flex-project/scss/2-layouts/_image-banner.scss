@@ -1,0 +1,34 @@
+.banner__img {
+    overflow: hidden;
+    text-align: right;
+
+    img {
+        width: 100%;
+    }
+
+    .banner__w_80 {
+        width: 88.5%;
+        display: inline-block;
+    }
+}
+
+
+
+
+@media all and (min-width:1024px) and (max-width:1440px) {
+    .banner__img {
+        .banner__w_80 {
+            width: 92%;
+        }
+    }
+}
+
+@media all and (max-width:991px) {
+    .banner__img {
+        .banner__w_80 {
+            width: 95%;
+        }
+    }
+
+
+}

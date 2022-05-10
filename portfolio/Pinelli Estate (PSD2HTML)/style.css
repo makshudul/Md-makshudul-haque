@@ -1,0 +1,537 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Your template name
+    Template URI:
+    Description: This is html5 template
+    Author:
+    Author
+    Version: 1.0
+
+-----------------------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+a:focus {
+  outline:0px solid;
+  text-decoration:none;
+}
+a {
+  transition: all 0.3s ease 0s;
+  text-decoration:none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0 none;
+}
+img {
+  max-width:100%;
+  height:auto
+}
+p {
+  margin:0 0 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+}
+
+ul{
+  list-style: outside none none;
+  margin: 0;
+  padding: 0
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #152631;
+  background-color: #f3f4f4;
+}
+.header_area{
+    padding: 20px 0;
+}
+.header_top{
+    display: flex;
+    flex-wrap: wrap;
+}
+.single_opeing_timer{
+    width: 50%;
+}
+.single_opeing_timer p{
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+}
+.header_right{
+    display: flex;
+}
+.header_shoping_cart{
+    background-color: #b2936d;
+    padding: 5px;
+}
+.m_p{
+    padding:4px 10px;
+    display: inline-block;
+    color:#000;
+    font-family: 'Vidaloka';
+    font-size: 14px;
+    color: #152731;
+}
+.bg_w{
+    background-color: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    color: #b2936d;
+}
+.header_social_icon{
+    padding-left: 15px
+}
+.header_social_icon a{
+    color: #b2936d;
+    font-size: 24px;
+    display: inline-block;
+    padding: 10px;
+}
+.main_nav_bar{
+    border-radius: 0;
+}
+.navbar-default {
+	background-color: #152731;
+	border-color:transparent;
+    margin-bottom: 0;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 30px 12px;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+	color: #B2936D;
+	background-color: transparent;
+}
+.hero_area{
+    background-image: url('images/hero_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 638px;
+}
+.hero_area{
+    padding: 300px 0;
+    color: #fff;
+}
+.hero_area h3{
+    font-size: 36px;
+    font-weight: 300
+}
+
+
+.hero_bottom{
+    padding: 75px 0;
+}
+.single_c_hero_b{
+    text-align: center;
+    padding:50px 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    height: 320px;
+    background-color: #fff;
+}
+.single_c_hero_b .img_w{
+    height:80px
+}
+.single_c_hero_b h3{
+    border-bottom: 2px solid #b2936d;
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-family: 'Vidaloka';
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.single_c_hero_b p{
+    color: #5a5a5a;
+    font-size: 14px;
+}
+.discover_wine{
+    padding: 75px 0;
+}
+
+.site_m_title{
+    text-align: center;
+}
+.site_m_title h3{
+    font-family: 'Vidaloka';
+    text-transform: uppercase;
+    font-size: 36px;
+}
+.site_m_title .bar_line{
+    display: inline-block;
+    width: 150px;
+    height: 5px;
+    margin: 20px auto;
+    background-color: #b2936d
+}
+.site_m_title p{
+    max-width: 80%;
+    margin:auto auto 30px auto;
+}
+.browse_wine{
+    margin-top: 100px;
+    background-color: #152631;
+    color: #fff;
+}
+.browse_wine_inner{
+    padding:32px 50px;
+}
+.browse_wine_inner h3{
+    font-family: 'Vidaloka';
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 42px;
+}
+.bar_line_2{
+    display: inline-block;
+    width: 150px;
+    height:3px;
+    margin: 10px auto;
+    background-color: #b2936d
+}
+.browse_wine_inner p em{
+    color: #b2936d;
+}
+.big_slider .owl-theme .owl-nav {
+	margin-top: 10px;
+	position: absolute;
+	width: 100%;
+	top: 59%;
+	right: 0%;
+	z-index: 999;
+	padding-left: 453px;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+	background: 0 0;
+	color: inherit;
+	border: none;
+	font: inherit;
+	border: 1px solid #fff;
+	border-radius: 0;
+	padding: 10px !important;
+}
+
+
+.award_area{
+    padding: 75px 0;
+}
+.single_award{
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+.single_award_inner{
+    padding:30px 20px;
+}
+.single_award_inner h3{
+    font-family: 'Vidaloka';
+    text-transform: uppercase;
+    font-size: 17px;
+}
+.single_award_inner p{
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 22px;
+    color: #5a5a5a;
+}
+.single_award_inner a{
+    color: #b2936d;
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.big_shop{
+    padding: 150px 0;
+    background-repeat: no-repeat;
+}
+.bg_1{
+    background-image: url('images/bg-1.jpg');
+}
+.big_bg_shop_inner{
+    color: #fff;
+}
+.big_bg_shop_inner p{
+    font-size: 18px;
+}
+.l_p{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.big_bg_shop_inner h1{
+    font-family: 'Vidaloka';
+    text-transform: uppercase;
+    font-size: 65px;
+}
+.button_area_shop{
+    margin-top: 100px;
+}
+.button_area_shop button{
+    background-color: rgba(255,255,255,0.3);
+    border: 2px solid #fff;
+    padding: 20px 80px;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin:25px 10px 0 0;
+    transition: all 0.3s ease-out 0s;
+}
+.button_area_shop button:hover{
+    background-color: #fff;
+    color: #b2936d;
+}
+.center_c_area{
+    padding: 75px 0;
+}
+.pad_m{
+    margin-bottom: 50px;
+}
+.single_c_inner{
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    text-align: center;
+
+}
+.p_t{
+    padding-top: 30px;
+}
+.single_c_inner_inner{
+    padding: 30px 20px;
+}
+.single_c_inner_inner p{
+    font-family: 'Vidaloka';
+    font-size: 15px;
+}
+.bg_2{
+    background-image: url('images/bg-2.jpg');
+}
+.single_c_inner_inner span{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #b1936d;
+    margin: 20px 0;
+    display: block;
+
+}
+.single_c_inner_inner h3{
+    font-size: 18px;
+    font-family: 'Vidaloka';
+    margin-bottom: 20px;
+}
+.single_c_inner_inner a{
+    font-size: 12px;
+    color: #6b6b6b;
+    display: block;
+    text-transform: uppercase;
+}
+.join_our_su{
+    background-color: #b1936d;
+    color: #fff;
+    padding: 50px 0;
+}
+.single_list_su h3{
+    font-family: 'Vidaloka';
+    text-transform: uppercase;
+    font-size: 34px;
+}
+.single_list_su p{
+    margin-bottom: 0;
+}
+.sib_form input[type=text]{
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 25px;
+    margin-top: 50px;
+}
+.su_social a{
+    font-size: 30px;
+    padding: 0 5px;
+    color: #fff;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.sib_form input::placeholder {
+    color: #fff;
+    opacity: 1; 
+}
+
+.sib_form input:-ms-input-placeholder {
+    color: #fff;
+}
+
+.sib_form input::-ms-input-placeholder {
+    color: #fff;
+}
+.testimonial_area{
+    background-image: url('images/bg-3.jpg');
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.testimonial_inner h3{
+    font-family: 'Vidaloka';
+    text-transform: uppercase;
+    color: #b1936d;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.testimonial_inner p{
+    font-family: 'Vidaloka';
+}
+.testimonial_area .bar_line{
+    display: block;
+    width: 100px;
+    height: 4px;
+    margin: 20px auto;
+    background-color: #b2936d
+}
+.photo_gallery{
+    padding: 75px 0;
+}
+.site_m_title span{
+    text-transform: uppercase;
+    color: #b2936d;
+    letter-spacing: 3px;
+}
+.site_m_title h4{
+    font-size: 30px;
+    font-family: 'Vidaloka';
+}
+
+
+.photo_gallery .owl-carousel .owl-nav button.owl-next,
+.photo_gallery .owl-carousel .owl-nav button.owl-prev,
+.photo_gallery  .owl-carousel button.owl-dot {
+	background: 0 0;
+	color: inherit;
+	border: none;
+	font: inherit;
+	border: 1px solid #2c3136;
+	border-radius: 0;
+	padding: 10px !important;
+	background-color: #2c3136;
+}
+
+
+.bg_3{
+    background-image: url('images/bg-4.jpg');
+
+}
+.big_footer_area{
+    background-color: #2c3136;
+    color: #fff;
+    padding: 50px 0;
+}
+.big_footer_area h3{
+    font-family: 'Vidaloka';
+    font-size: 20px;
+}
+.single_footer p{
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 25px;
+    display: block;
+}
+.single_footer ul{
+    width: 50%;
+    float: left;
+    padding-right: 15px;
+}
+.single_footer ul li a{
+    color: #fff;
+    font-size: 11px;
+    display: block;
+    line-height: 28px;
+}
+.map_f iframe{
+    width: 100%;
+}
+.footer_contact .d_b{
+    display: block;
+}
+.footer_contact address{
+    font-size: 14px;
+}
+.footer_contact p{
+    font-size: 13px;
+    margin: 0;
+}
+.footer_social{
+    margin-top: 15px;
+}
+.footer_social h3{
+    display: inline-block;
+}
+.footer_social a{
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    padding: 0 10px;
+}
+.main_footer{
+    background-color: #152731;
+    padding: 10px 0;
+}
+.main_footer p{
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #b2936d;
+    font-weight: 300;
+}
+.main_footer a{
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #b2936d;
+    font-weight: 300;
+}
+.browse_wine_inner_img{
+    position: relative;
+}
+
+.arrow_g{
+    background-color: #b2936d;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0 0 0 45px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -25px;
+    display: inline-block;
+}
+.arrow_g:hover{
+    color: #fff;
+}
+.arrow_g img{
+    background-color: #152631;
+    padding: 25px;
+    margin-left: 25px;
+    transition: all 0.3s ease-out 0s;
+}
+.arrow_g:hover img{
+    padding:25px 20px 25px 30px;
+}

@@ -1,0 +1,15 @@
+.btn{
+    background-color: transparent;
+    border: none;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.btn-white{
+    background-color: $white-400;
+    color: $black-400;
+    &:hover{
+        background-color: $black-400;
+        color: $white-400;
+    }
+}

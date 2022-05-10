@@ -1,0 +1,150 @@
+
+@media (min-width: 1101px) and (max-width: 2000px) {
+
+    .hero_area {
+    	background-position: 97% 0%;
+    }
+
+}
+
+@media (min-width: 1101px) and (max-width: 1200px) {
+    .m_p {
+        padding: 4px 4px;
+    }
+    .bg_w {
+        padding: 5px 6px;
+    }
+    .hero_area {
+    	background-position: 97% 0%;
+    }
+
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 1100px) {
+    .big_shop {
+    	padding: 100px 0;
+    	background-repeat: no-repeat;
+    }
+    .single_c_hero_b {
+    	height: auto;
+    }
+    .hero_area {
+    	background-position: 97% 0%;
+    }
+    .m_p {
+    	padding: 4px 4px;
+    }
+    .bg_w {
+    	padding: 5px 6px;
+    }
+}
+
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .single_c_hero_b {
+    	height: auto;
+    }
+    body {
+    	font-size: 14px;
+    	line-height: 22px;
+    }
+    .site_loog {
+    	margin-bottom: 10px;
+    	text-align: center;
+    }
+    .center_c_area {
+    	padding: 100px 0 75px 0;
+    }
+    .m_p {
+    	padding: 4px 2px;
+    	font-size: 12px;
+    }
+    .bg_w {;
+    	padding: 4px 4px;
+    	font-size: 12px;
+    }
+    .single_opeing_timer {
+        margin: 10px 0;
+    }
+    .single_opeing_timer p {
+    	font-size: 8px;
+    	line-height: 12px;
+    }
+    .navbar-default .navbar-nav > li > a {
+    	padding: 10px 12px;
+    }
+    .hero_area {
+    	padding: 50px 0;
+    }
+    .hero_area {
+    	height: auto;
+        background-position: 50% 0%;
+    }
+    .hero_area h3 {
+    	font-size: 18px;
+    }
+    .single_c_hero_b {
+    	margin-bottom: 20px;
+    }
+    .site_m_title h3 {
+    	font-size: 20px;
+    }
+    .browse_wine_inner {
+    	padding: 32px 30px;
+    }
+    .browse_wine_inner h3 {
+    	font-size: 24px;
+    	line-height: 32px;
+    }
+    .single_award {
+    	margin-bottom: 20px;
+    }
+    .big_bg_shop_inner h1 {
+    	font-size: 30px;
+    }
+    .big_shop{
+        padding: 50px 0;
+    }
+    .big_bg_shop_inner p {
+    	font-size: 13px;
+    	line-height: 20px;
+    }
+    .button_area_shop button {
+    	padding: 20px 32px;
+    	font-size: 15px;
+    }
+    .single_c_inner {
+    	margin-bottom: 20px;
+    }
+    .single_list_su{
+        text-align: center;
+    }
+    .single_list_su h3 {
+    	font-size: 24px;
+    	margin-top: 15px;
+    }
+    .site_m_title h4 {
+	      font-size: 15px;
+    }
+    .photo_gallery {
+    	padding: 35px 0;
+    }
+    .footer_logo{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .single_footer{
+        margin-bottom: 20px;
+    }
+    .footer_s{
+        text-align: center;
+    }
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+}

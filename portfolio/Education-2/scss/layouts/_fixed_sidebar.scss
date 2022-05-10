@@ -1,0 +1,110 @@
+.fixed_sidebar{
+    position: absolute;
+    right: 0;
+    top: 165px;
+    background-color: #EFEFEF;
+    width: 200px;
+    z-index: 999;
+
+    .fixed_sidebar__head{
+        padding: 15px;
+        
+        a{
+            font-size: 22px;
+            font-weight: $font-medium;
+            color: $yellow;
+        }
+        i{
+            margin-left: 30px;
+            color: $text-color;
+        }
+    }
+    .fixed_sidebar__content{
+        text-align: center;
+        margin-top: 20px;
+        .fixed_sidebar__item{
+            display: block;
+            margin-bottom: 30px;
+            font-size: 18px;
+            font-weight: $font-normal;
+            color: $yellow;
+        }
+       
+        span{
+            display: block;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media all and (min-width:1024px) and (max-width:1440px){
+    .fixed_sidebar{
+        top: 143px;
+        width: 100px;
+    
+        .fixed_sidebar__head{
+            padding: 15px 5px;
+            
+            a{
+                font-size: 16px;
+                display: inline-flex;
+                align-items: center;
+            }
+            i{
+                margin-left: 10px;
+                color: $text-color;
+            }
+        }
+        .fixed_sidebar__content{
+            .fixed_sidebar__item{
+                margin-bottom: 20px;
+                font-size: 14px;
+
+                img{
+                    width: 50px;
+                }
+            }
+           
+            span{
+                display: block;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+@media all  and (max-width:991px){
+    .fixed_sidebar{
+        top: 128px;
+        width: 100px;
+    
+        .fixed_sidebar__head{
+            padding: 5px 5px;
+            
+            a{
+                font-size: 14px;
+                display: inline-flex;
+                align-items: center;
+            }
+            i{
+                margin-left: 15px;
+                color: $text-color;
+            }
+        }
+        .fixed_sidebar__content{
+            display: none;
+            .fixed_sidebar__item{
+                margin-bottom: 20px;
+                font-size: 14px;
+
+                img{
+                    width: 50px;
+                }
+            }
+           
+            span{
+                display: block;
+                margin-top: 5px;
+            }
+        }
+    }
+}

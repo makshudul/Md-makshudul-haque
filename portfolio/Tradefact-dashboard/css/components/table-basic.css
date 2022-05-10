@@ -1,0 +1,207 @@
+.table_box__head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #000;
+    border: 1px solid #EDF2F9;
+}
+.table_box--title{
+    display: flex;
+    align-items: center;
+}
+.table_box--title span{
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 17px;
+    color: #95AAC9;
+    margin-right: 10px;
+}
+.table_box--title h3{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #12263F;
+    margin: 0;
+}
+.table_box__header--right{
+    display: flex;
+}
+.table_search .form-inline{
+    background: #FFFFFF;
+    border: 1px solid #EDF2F9;
+    border-radius: 4px;
+}
+.table_search .form-control{
+    border: none;
+    font-weight: 500;
+    font-size: 13px;
+    color: #12263F;
+    height: 38px;
+}
+.table_location .custom-select{
+    font-weight: 500;
+    font-size: 13px;
+    color: #12263F;
+    height: 38px;
+    margin: 0 5px;
+    border-color: #EDF2F9;
+    width: 150px;
+}
+
+.btn-search{
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #95AAC9;
+    height: 38px;
+}
+.add_item{
+    margin-left: 15px;
+}
+
+
+.table_box{
+    padding: 0 20px;
+}
+.equal_table table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.equal_table table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.table thead th {
+    vertical-align: middle;
+    border-bottom: 1px solid #EDF2F9;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 17px;
+    color: #12263F;
+}
+.table td, .table th {
+    padding: 15px 10px;
+    vertical-align: middle;
+    border-top: 1px solid #EDF2F9;
+    font-size: 13px;
+    line-height: 17px;
+    color: #12263F;
+}
+.table th {
+    padding:15px 10px;
+    vertical-align: middle;
+    border-top: none;
+}
+.table-hover tbody tr:hover {
+    color: #212529;
+    background-color: rgba(18, 38, 63, 0.02);
+}
+.mobile_icon{
+    display: none;
+}
+.mobile_icon.desktop_also{
+    display: inline-block;
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+@media all and (max-width:991px){
+    .table {
+        width: 1000px;
+    }
+    .main__content__inner {
+        margin-left: 0;
+        width: 100%;
+        padding: 0;
+    }
+    .main__content__inner.full_width {
+        margin-left: 0%;
+        width: 100%;
+    }
+    .table_box__head{
+        position: relative;
+        margin-bottom: 60px;
+    }
+    .table_search{
+        position: absolute;
+        width: 100%;
+        background-color: #fff;
+        left: 0;
+        top: 78px;
+        padding: 0 15px;
+    }
+   
+    .table_search .form-inline {
+        flex-wrap: nowrap;
+    }
+    .btn-blue-fill{
+        width: auto;
+    }
+    .mobile_icon{
+        display: block;
+    }
+    .btn-label{
+        display: none;
+    }
+    .table_box--title h3 {
+        font-size: 14px;
+    }
+    .equal_table table {
+        width: 600px;
+    }
+}
+
+
+
+.table_status{
+    margin-right: 15px;
+}
+.table_status .custom-select{
+    border: 1px solid #EDF2F9;
+    font-weight: 500;
+    font-size: 13px;
+    color: #12263F;
+    height: 38px;
+    width: 150px;
+}
+.table_toggle{
+    margin-right:15px;
+}
+.table_toggle .btn{
+    width: 100px;
+}
+.btn-outline-primary:not(:disabled):not(.disabled).active, 
+.btn-outline-primary:not(:disabled):not(.disabled):active, 
+.show>.btn-outline-primary.dropdown-toggle {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #0275D8;
+    border-color: #005cbf;
+}
+.btn-outline-primary:not(:disabled):not(.disabled).active .toggle_label, 
+.btn-outline-primary:not(:disabled):not(.disabled):active .toggle_label, 
+.show>.btn-outline-primary.dropdown-toggle .toggle_label {
+    color: rgba(255, 255, 255, 1);
+}
+.btn-group>.btn-group:not(:first-child), 
+.btn-group>.btn:not(:first-child) {
+    margin-left: 0px;
+}
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus, 
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, 
+.show>.btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: none
+}
+.shipment_table table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+.shipment_table table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+

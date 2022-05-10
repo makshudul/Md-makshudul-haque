@@ -1,0 +1,173 @@
+.orientation-section{
+    
+    padding-bottom: 180px;
+    .orientation__inner{
+        position: relative;
+        .sorientation__img{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 60%;
+            img{
+                width: 100%;
+            }
+        }
+        &--2{
+            margin-top: 180px;
+            .sorientation__img{
+                position: absolute;
+                left:  0;
+                top: 0;
+                width: 60%;
+                img{
+                    width: 100%;
+                }
+            }
+            .orientation__card_flex{
+                display: flex;
+                justify-content: flex-end;
+                .orientation__card{
+                    background-color: $gray-500;
+                    width: 50%;
+                    padding: 80px 45px 80px 250px;
+                    margin-top: 250px;
+                    h3{
+                        font-size: 25px;
+                        font-weight: $txt-500;
+                        margin-bottom: 30px;
+                        border-bottom: 1px solid #000;
+                        padding-bottom: 30px;
+                    }
+                    p{
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .orientation__card_flex{
+        display: flex;
+    }
+    .orientation__card{
+        background-color: $gray-500;
+        width: 50%;
+        padding: 80px 320px 80px 45px;
+        margin-top: 200px;
+        h3{
+            font-size: 25px;
+            line-height: 50px;
+            font-weight: $txt-500;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 30px;
+        }
+        p{
+            line-height: 40px;
+        }
+    }
+
+}
+
+
+@media all and (min-width:1024px) and (max-width:1440px) {
+    .orientation-section{
+    
+        .orientation__inner{
+           
+            &--2{
+               
+                .orientation__card_flex{
+                    .orientation__card{
+                        padding: 80px 45px 80px 170px;
+                        margin-top: 190px;
+                        h3{
+                            font-size: 20px;
+                        }
+                        p{
+                            line-height: 32px;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .orientation__card{
+            padding:80px 170px 80px 45px;
+            margin-top: 190px;
+            h3{
+                font-size: 18px;
+                line-height: 32px;
+            }
+            p{
+                line-height: 32px;
+                font-size: 13px;
+            }
+        }
+    
+    }
+    
+}
+@media all and (max-width:991px) {
+    .orientation-section{
+        padding-bottom: 100px;
+        .orientation__inner{
+            .sorientation__img{
+                position: static;
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            &--2{
+                margin-top: 100px;
+                .sorientation__img{
+                    position: static;
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .orientation__card_flex{
+                    display: flex;
+                    justify-content: flex-start;
+                    .orientation__card{
+                        background-color: $gray-500;
+                        width: 100%;
+                        padding: 30px;
+                        margin-top: 0px;
+                        h3{
+                            font-size: 16px;
+                            line-height: 32px;
+                        }
+                        p{
+                            line-height: 32px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .orientation__card_flex{
+            display: flex;
+        }
+        .orientation__card{
+            background-color: $gray-500;
+            width: 100%;
+            padding: 30px;
+            margin-top: 0px;
+            h3{
+                font-size: 16px;
+                line-height: 32px;
+                font-weight: $txt-500;
+            }
+            p{
+                line-height: 32px;
+                font-size: 12px;
+            }
+        }
+    
+    }
+}

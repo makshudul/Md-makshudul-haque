@@ -1,0 +1,40 @@
+.newsletter-section{
+    background-color: $gray-thin;
+    .newsletter__card{
+        margin: 50px auto;
+        background-color: $white;
+        border-radius: 10px;
+        @include shadow-b;
+        padding: 30px;
+
+        .newsletter__search{
+            width: 75%;
+            height: 48px;
+            border: 2px solid $blue;
+            border-radius: 4px 0 0 4px;
+        }
+        .btn.newsletter__btn{
+            width: 25% !important;
+            border-radius: 0 4px 4px 0;
+            font-size: 16px;
+        }
+    }
+}
+
+@media all and (max-width:991px){
+    .newsletter-section{
+        background-color: $gray-thin;
+        .newsletter__card{
+            padding: 30px 10px;
+    
+            .newsletter__search{
+                width: 60%;
+                height: 40px;
+            }
+            .btn.newsletter__btn{
+                width: 40% !important;
+                border-radius: 0 4px 4px 0;
+            }
+        }
+    }   
+}

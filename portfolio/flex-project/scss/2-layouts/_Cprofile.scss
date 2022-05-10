@@ -1,0 +1,96 @@
+.Cprofile-section{
+    padding: 300px 0 200px 0;
+
+    .Cprofile__card{
+        width: 470px;
+        height: 380px;
+        position: relative;
+        transition: transform 300ms ease-in-out;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .Cprofile__card__overlay{
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: rgba(0,0,0,0.46);
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            padding-top: 130px;
+            color: $white-400;
+
+            h3{
+                font-size: 30px;
+                line-height: 40px;
+                margin-bottom: 10px;
+            }
+            span{
+                font-family: $f-noto_serif_myanmar_regular;
+                font-weight: $txt-400;
+                display: block;
+            }
+            .btn{
+                margin-top: 60px;
+                display: inline-flex;
+                justify-content: space-between;
+                align-items: center;
+                &.btn-lg{
+                    width: 290px;
+                    height: 60px;
+                }
+                span{
+                    display: block;
+                    line-height: 0;
+                    i{
+                        line-height: 0;
+                    }
+                    margin-top: 10px;
+                }
+            }
+        }
+        &:hover{
+            transform: scale(0.9);
+            .btn{
+                background-color: $black-400;
+        color: $white-400;
+            }
+        }
+    }
+}
+
+
+
+
+@media all and (min-width:1024px) and (max-width:1440px) {
+    .Cprofile-section{
+        padding: 250px 0 150px 0;
+    
+        .Cprofile__card{
+            width: 365px;
+            height: 350px;
+            .Cprofile__card__overlay{
+                padding-top: 100px;
+            }
+        }
+    }
+    
+    
+}
+
+@media all and (max-width:991px) {
+    .Cprofile-section{
+        padding: 100px 0;
+    
+        .Cprofile__card{
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+    
+
+}

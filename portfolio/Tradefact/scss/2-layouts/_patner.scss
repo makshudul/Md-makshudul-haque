@@ -1,0 +1,53 @@
+.patner-inner{
+    .patner-card{
+        border-radius: 20px;
+        @include shadow-b;
+        border: 1px solid $gray-light;
+        padding: 20px;
+        .patner-card__head{
+            border-bottom: 1px solid $gray-light;
+            padding: 0 0 10px 0;
+            margin-bottom: 10px;
+        }
+        .patner-card__title{
+            h3{
+                font-size: 18px;
+                font-weight: 500;
+                color: $black;
+                margin-bottom: 0;
+            }
+            p{
+                font-size: 16px;
+            }
+            .patner-card__title--group{
+                margin-bottom: 20px;
+            }
+        }
+        .patner-card__address{
+            margin: 40px 0 30px 0;
+            span{
+                font-size: 13px;
+                line-height: 18px;
+                display: block;
+                color: $black;
+            }
+            a{
+                font-size: 13px;
+                line-height: 18px;
+                display: block;
+            }
+        }
+        .patner-card__footer{
+            img{
+                width: 130px;
+            }
+        }
+    }
+
+}
+
+@media all and (max-width:991px){
+    .patner-card{
+        margin-bottom: 30px;
+    }
+}

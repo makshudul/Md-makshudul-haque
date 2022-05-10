@@ -1,0 +1,8 @@
+<svg id="Vector_Smart_Object" data-name="Vector Smart Object" xmlns="http://www.w3.org/2000/svg" width="6.751" height="14.177" viewBox="0 0 6.751 14.177">
+  <g id="Vector_Smart_Object-2" data-name="Vector Smart Object" transform="translate(0 0)">
+    <g id="Group_6" data-name="Group 6">
+      <path id="Path_85" data-name="Path 85" d="M54.91,62.031H52.436v-1.8c0-.552.573-.68.841-.68h1.6V57.123l-1.832-.01a2.8,2.8,0,0,0-3.07,2.972v1.946H48.16v2.5h1.813V71.29h2.463V64.534h2.092Zm0,0" transform="translate(-48.16 -57.113)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+  <path id="Color_Overlay" data-name="Color Overlay" d="M1.814,14.176V7.421H0v-2.5H1.814V2.972A2.8,2.8,0,0,1,4.883,0L6.715.01V2.438h-1.6c-.267,0-.841.128-.841.68v1.8H6.751l-.382,2.5H4.276v6.756Z" transform="translate(0 0)" fill="#fff"/>
+</svg>

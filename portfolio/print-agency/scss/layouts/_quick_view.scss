@@ -1,0 +1,48 @@
+#quick_view{
+    .close {
+        font-size: 18px;
+        opacity: 1;
+    }
+
+    .product__quick_view__content{
+        margin-top: 50px;
+        h3{
+            font-size: 18px;
+            font-weight: 400;
+        }
+        h4{
+            font-size: 18px;
+            font-weight: 400;
+            color: $yellow;
+        }
+
+        .product_item{
+            label{
+                font-size: 14px;
+                display: block;
+            }
+            .form-control{
+                width: 100px;
+            }
+        }
+
+        .btn-reqest-q{
+            background-color: $yellow;
+            border-color: $yellow;
+            border-radius: 0;
+            color: $white;
+            margin-top: 15px;
+        }
+        .btn-view-more{
+            text-decoration: underline;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    }
+
+    .product__quick_view__img{
+        img{
+            width: 100%;
+        }
+    }
+}

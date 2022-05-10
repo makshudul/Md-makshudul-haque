@@ -1,0 +1,59 @@
+.testimonial-section{
+    padding: 100px 0;
+    .testimonial__head{
+        h3{
+            font-size: 32px;
+            color: $black;
+            margin-bottom: 50px;
+        }
+    }
+    .testimonial__carousel{
+        h3{
+            font-size: 14px;
+            color: $gray;
+            letter-spacing: 3px;
+        }
+    }
+
+    .offset-md-1 {
+        margin-right: 8.33333%;
+    }
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+	background: $yellow;
+}
+.owl-carousel .owl-nav button.owl-next, 
+.owl-carousel .owl-nav button.owl-prev, 
+.owl-carousel button.owl-dot {
+	background: 0 0;
+	color: inherit;
+	border: none;
+	padding: 0 !important;
+	font: inherit;
+	font-size: 50px;
+	color: #dddd;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+    background: transparent;
+    color: #dddd;
+}
+.owl-theme .owl-nav {
+	margin-top: 10px;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 40%;
+	text-align: left;
+}
+.owl-carousel .owl-nav button.owl-prev {
+    margin-right: -80px;
+    float: right;
+}
+.owl-carousel .owl-nav button.owl-next{
+    margin-left: -80px;
+    
+}
+
+@media all and (max-width:991px){
+    
+}

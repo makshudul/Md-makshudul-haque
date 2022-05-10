@@ -1,0 +1,43 @@
+$font-family: 'Heebo', sans-serif;
+$font-size: 14px;
+$line-height:22px;
+$font-light:300;
+$font-normal:400;
+$font-medium:500;
+$font-bold:700;
+
+
+// colors
+$blue:#0177CE;
+$blue-light:#42A6EA;
+$blue-light-2:rgba(1, 119, 206, 0.5);
+$black:#000000;
+$black-light:#707070;
+$yellow: #CB9307;
+$gray:#EFEFEF;
+
+// Custom Color
+$text-color: $black-light;
+$boder-color: rgba(65, 65, 65, 0.5);
+$primary:$blue;
+$secondary:$yellow;
+// Spacer
+$spacer: 1.5rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3)
+  ),
+  $spacers
+);
+
+
+// Border Radius
+$border-radius:               4px !default;
+$border-radius-lg:           4px !default;
+$border-radius-sm:           4px !default;

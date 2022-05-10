@@ -1,0 +1,15 @@
+@import 'css/basic.css';
+@import 'css/components/header.css';
+@import 'css/components/sidebar.css';
+@import 'css/components/table-basic.css';
+@import 'css/components/modal.css';
+@import 'css/pages/suppliers.css';
+@import 'css/pages/directory.css';
+@import 'css/pages/admin.css';
+@import 'css/pages/quotes.css';
+@import 'css/pages/user-profile.css';
+@import 'css/pages/dashboard-forward.css';
+@import 'css/pages/shipment.css';
+
+@import 'css/components/range.css';
+@import 'css/components/circle-progress.css';

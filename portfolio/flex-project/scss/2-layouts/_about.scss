@@ -1,0 +1,51 @@
+.about-section{
+    padding: 180px 0;
+
+    .about__card{
+        p{
+            line-height: 50px;
+        }
+
+        &--50{
+            width: 45%;
+            p{
+                margin-bottom: 40px;
+            }
+
+            span{
+                font-family: $f-amalfi_coastregular;
+                font-size: 120px;
+                color: rgba(0,0,0,0.10);
+                font-weight: $txt-300;
+            }
+        }
+    }
+}
+
+
+@media all and (max-width:991px) {
+    .about-section{
+        padding: 100px 0;
+        .about__card{
+            p{
+                line-height: 50px;
+            }
+            img{
+                width: 100%;
+                margin-top: 30px;
+            }
+            &--50{
+                width: 100%;
+                p{
+                    margin-bottom: 40px;
+                    font-size: 12px;
+                    line-height: 32px;
+                }
+                span{
+                    font-size: 30px;
+                }
+            }
+        }
+        
+    }
+}

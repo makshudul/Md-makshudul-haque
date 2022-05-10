@@ -1,0 +1,215 @@
+.meeting-info{
+    position: relative;
+    .yellow__curve__left{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 45%;
+        height: 340px;
+        background-color: $yellow;
+        display: block;
+        border-radius: 0 250px 15px 0;
+    }
+    .sectino__nav{
+        position: absolute;
+        right: 0;
+        top: 100px;
+        background-color: $white;
+        min-width: 230px;
+        @include box-shadow(0,3px,6px, rgba(0,0,0,0.16));
+
+        ul{
+            li{
+                display: block;
+                a{
+                    display: block;
+                    padding: 10px 15px;
+                    color: $text-color;
+                    &:hover{
+                        background-color: $blue-light;
+                        color: $white;
+                    }
+
+                }
+                &.active{
+                    a{
+                        background-color: $blue-light;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    .meeting__info__card{
+        h3{
+            font-size: 18px;
+            font-weight: $font-bold;
+
+        }
+        p{
+            margin-top: 20px;
+        }
+        ul {
+            padding-right: 30px;
+
+            li {
+                display: block;
+                margin-bottom: 20px;
+                font-size: 16px;
+                line-height: 32px;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    right: -30px;
+                    top: 0;
+                    content: "\f060";
+                    font-family: "Font Awesome 5 Pro";
+                    color: $blue;
+                }
+            }
+        }
+    }
+    .meeting__info__card__img{
+        text-align: left;
+        img{
+            width: 80%;
+            margin-top: -100px;
+
+        }
+    }
+}
+
+@media all and (min-width:1024px) and (max-width:1440px){
+
+    .meeting-info{
+        position: relative;
+        
+        .sectino__nav{
+            min-width: 90px;
+    
+            ul{
+                li{
+                    a{
+                        padding: 10px 5px;
+                        font-size: 12px;
+                    }
+                    
+                }
+            }
+        }
+        .meeting__info__card{
+            h3{
+                font-size: 18px;
+                font-weight: $font-bold;
+    
+            }
+            p{
+                margin-top: 20px;
+            }
+            ul {
+                padding-right: 30px;
+    
+                li {
+                    display: block;
+                    margin-bottom: 20px;
+                    font-size: 16px;
+                    line-height: 32px;
+                    position: relative;
+    
+                    &::after {
+                        position: absolute;
+                        right: -30px;
+                        top: 0;
+                        content: "\f060";
+                        font-family: "Font Awesome 5 Pro";
+                        color: $blue;
+                    }
+                }
+            }
+        }
+        .meeting__info__card__img{
+            text-align: left;
+            img{
+                width: 80%;
+                margin-top: -100px;
+    
+            }
+        }
+    }
+}
+
+@media all and (max-width:991px){
+    .meeting-info{
+        position: relative;
+        .yellow__curve__left{
+            display: none;
+        }
+        .sectino__nav{
+            position: static;
+            max-width: 80%;
+            margin-right: 15px;
+    
+            ul{
+                li{
+                    display: block;
+                    a{
+                        display: block;
+                        padding: 10px 15px;
+                        color: $text-color;
+                        &:hover{
+                            background-color: $blue-light;
+                            color: $white;
+                        }
+    
+                    }
+                    &.active{
+                        a{
+                            background-color: $blue-light;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .meeting__info__card{
+            h3{
+                font-size: 18px;
+                font-weight: $font-bold;
+    
+            }
+            p{
+                margin-top: 20px;
+            }
+            ul {
+                padding-right: 30px;
+    
+                li {
+                    display: block;
+                    margin-bottom: 20px;
+                    font-size: 16px;
+                    line-height: 32px;
+                    position: relative;
+    
+                    &::after {
+                        position: absolute;
+                        right: -30px;
+                        top: 0;
+                        content: "\f060";
+                        font-family: "Font Awesome 5 Pro";
+                        color: $blue;
+                    }
+                }
+            }
+        }
+        .meeting__info__card__img{
+            text-align: left;
+            img{
+                width: 100%;
+                margin-top: 30px;
+    
+            }
+        }
+    }
+}

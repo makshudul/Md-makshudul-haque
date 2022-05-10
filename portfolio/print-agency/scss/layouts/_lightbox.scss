@@ -1,0 +1,46 @@
+.lb-outerContainer{
+    position: relative;
+
+    .lb-container{
+        position: static;
+
+
+        .lb-nav a.lb-next {
+            width: 10%;
+            right: -80px;
+            opacity: 1;
+            position: absolute;
+        }
+        .lb-nav a.lb-prev {
+            width: 10%;
+            left: -80px;
+            opacity: 1;
+            position: absolute;
+        }
+    }
+
+
+}
+
+.lb-dataContainer {
+	padding-top: 20px;
+}
+.lb-data .lb-caption {
+    font-size: 13px;
+    color: $white;
+    font-weight: 300;
+
+    a{
+        display: block;
+        color: $white;
+        font-size: 12px;
+        font-style: italic;
+        text-decoration: underline;
+        margin-top: 10px;
+    }
+}
+
+.lb-data .lb-close {
+    position: absolute;
+    top: -44px;
+}

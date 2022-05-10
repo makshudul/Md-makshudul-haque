@@ -1,0 +1,96 @@
+.three-step{
+    position: relative;
+    .step-line{
+        position: absolute;
+        left: 0;
+        top: 100px;
+        img{
+            width: 100%;
+        }
+    }
+
+    // step__head
+    .step__head{
+        margin-bottom: 100px;
+        h3{
+            font-size: 24px;
+            line-height: 38px;
+            font-weight: 500;
+            color: $dark;
+            display: inline-block;
+
+            span{
+                display: inline-block;
+                padding: 3px 18px;
+                border: 1px solid $light-gray;
+                border-radius: 25px;
+                color: $primary;
+                @include box-shadow(0, 3px, 6px, rgba(0,0,0,0.16));
+
+            }
+        }
+    }
+
+    // step__card
+    .step__card{
+        padding-right: 45px;
+        .step__card__number{
+            span{
+                width: 70px;
+                height: 70px;
+                border-radius: 50px;
+                border:2px solid $info;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color:$info;
+                font-size: 24px;
+                font-weight: 500;
+                background-color: #fff;
+
+            }
+        }
+        .step__card__icon{
+            margin: 20px 0;
+            img{
+                width: 160px;
+            }
+        }
+        .step__card__title{
+            h3{
+                font-size: 18px;
+                line-height: 26px;
+                font-weight: 500;
+                color: $primary;
+            }
+        }
+    }
+}
+
+@media all and (max-width:991px){
+    .three-step{
+        position: relative;
+        .step-line{
+            display: none;
+        }
+        // step__head
+        .step__head{
+            margin-bottom: 70px;
+            h3{
+                font-size: 18px;
+                line-height: 32px;
+            }
+        }
+    
+        // step__card
+        .step__card{
+            padding-right: 0;
+            text-align: center;
+            margin-bottom: 50px;
+            .step__card__number{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

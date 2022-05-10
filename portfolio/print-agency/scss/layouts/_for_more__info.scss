@@ -1,0 +1,25 @@
+.for_more__info{
+    text-align: center;
+    margin-top:150px;
+    h3{
+        font-size:24px;
+        margin-bottom: 20px;
+    }
+    .btn-outline-primary{
+        width: 150px;
+        
+        margin-bottom: 20px;
+        &:hover{
+            color: $white;
+            display: inline-block;
+        }
+    }
+
+    .call__us{
+        a{
+            display: inline-block;
+            margin-top: 20px;
+            color: $text-color;
+        }
+    }
+}

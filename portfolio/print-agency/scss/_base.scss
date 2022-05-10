@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+a,a:hover{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: $line-height;
+    background-color: $white;
+    color: $text-color;
+    font-weight: $font-normal;
+    direction: rtl;
+    letter-spacing: $letter-space;
+    text-align: right;
+}
+
+.yellow__line{
+    img{
+        width: 100%;
+    }
+}
+
+@media all and (max-width:991px){
+    .py-5{
+        padding-bottom: 30px !important;
+        padding-top: 30px !important;
+    }
+}
+
+.whatsapp_contact_pop{
+    position: fixed;
+    left: 100px;
+    bottom: 40px;
+    a{
+        font-size: 20px;
+        i{
+            color: $green;
+        }
+    }
+}
